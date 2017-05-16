@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var x1 = 1000;
+        while (Math.abs(x1) > 999) {
+            x1 = parseInt(prompt("input a number from -999 to 999:"));
+        }
+        var part1 = x1 > 0 ? "Положительное " : "Отрицательное ";
+        var part2;
+        if (x1 == 0) {
+            part2 = "Нулевое число";
+            part1 = "";
+        } else if (Math.abs(x1 / 100) >= 1) {
+            part2 = "трехзначное число";
+        }
+        else if (Math.abs(x1 / 10) >= 1) {
+            part2 = "двухзначное число"
+        }
+        else if (Math.abs(x1 / 10) < 1) {
+            part2 = "однозначное число"
+        }
+        document.write(part1 + part2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

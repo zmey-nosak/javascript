@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var x1 = 10;
+        while (x1 > 5 || x1 < 1) {
+            x1 = parseInt(prompt("Input number 1-5:"));
+        }
+        var str;
+        switch (x1) {
+            case 1:
+                str = "плохо";
+                break;
+            case 2:
+                str = "неудовлетворительно";
+                break;
+            case 3:
+                str = "удовлетворительно";
+                break;
+            case 4:
+                str = "хорошо";
+                break;
+            case 5:
+                str = "отлично";
+                break;
+        }
+        document.write(str);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
