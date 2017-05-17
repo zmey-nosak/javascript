@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = prompt("Введите строку");
+        var key = prompt("Введите ключ");
+        var res = "";
+        var i = 0;
+        while (i < str.length) {
+            var tempCode = str.charCodeAt(i) ^ key.charCodeAt(0);
+            res += String.fromCharCode(tempCode);
+            i++;
+        }
+        document.write(res);
+    </script>
+</head>
+<body>
+</body>
+</html>

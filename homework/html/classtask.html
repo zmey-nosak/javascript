@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = prompt("Введите номер в формате 7(XXX)XXX-XX-XX");
+        var regExp = /7\(\d{3}\)\d{3}\-\d{2}\-\d{2}/ig;
+        document.write(regExp.test(str));
+    </script>
+</head>
+<body>
+</body>
+</html>
