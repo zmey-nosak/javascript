@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fec926e-a8d2-4275-bdff-4f594f2e482f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/html/task3_1.html" />
+    <list default="true" id="0fec926e-a8d2-4275-bdff-4f594f2e482f" name="Default" comment="check all task1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/html/task1_1.html" afterPath="$PROJECT_DIR$/homework/html/task1_1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/html/task1_3.html" afterPath="$PROJECT_DIR$/homework/html/task1_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/html/task1_5.html" afterPath="$PROJECT_DIR$/homework/html/task1_5.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task1_1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task1_1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/html/task1_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -35,18 +35,28 @@
       <file leaf-file-name="task1_4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/html/task1_4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="198">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task1_3.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="task1_3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/html/task1_3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task1_5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework/html/task1_5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -55,18 +65,8 @@
       <file leaf-file-name="task1_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/html/task1_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework/html/classtask.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="198">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -145,6 +145,8 @@
         <option value="$PROJECT_DIR$/homework/html/task3_1.html" />
         <option value="$PROJECT_DIR$/homework/html/task2_4.html" />
         <option value="$PROJECT_DIR$/homework/html/task1_1.html" />
+        <option value="$PROJECT_DIR$/homework/html/task1_3.html" />
+        <option value="$PROJECT_DIR$/homework/html/task1_5.html" />
       </list>
     </option>
   </component>
@@ -311,7 +313,7 @@
       <updated>1494949896101</updated>
       <workItem from="1494949897490" duration="6791000" />
       <workItem from="1495042416051" duration="2032000" />
-      <workItem from="1495121584067" duration="656000" />
+      <workItem from="1495121584067" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="homework&#10;">
       <created>1494950164374</created>
@@ -327,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495043141601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="check task1_1&#10;">
+      <created>1495122253938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495122253938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9479000" />
+    <option name="totallyTimeSpent" value="9990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -339,6 +348,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -363,7 +373,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="homework&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework&#10;" />
+    <MESSAGE value="check task1_1&#10;" />
+    <MESSAGE value="check all task1" />
+    <option name="LAST_COMMIT_MESSAGE" value="check all task1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -462,6 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -529,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/html/task1_5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework/html/task2_3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -600,22 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/html/task1_4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework/html/task1_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework/html/classtask4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -624,18 +614,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/html/task1_2.html">
+    <entry file="file://$PROJECT_DIR$/homework/html/task1_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/html/task1_1.html">
+    <entry file="file://$PROJECT_DIR$/homework/html/task1_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/html/task1_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/html/task1_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/html/task1_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
