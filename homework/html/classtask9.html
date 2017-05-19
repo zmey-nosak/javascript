@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var mas = [2, 4, 3, 0], t;
+        for (var i = 0; i < mas.length - 1; i++) {
+            for (var j = 0; j < mas.length - i; j++) {
+                if (mas[j] > mas[j + 1]) {
+                    t = mas[j];
+                    mas[j] = mas[j + 1];
+                    mas[j + 1] = t;
+                }
+            }
+        }
+        document.write(mas.toString());
+    </script>
+</head>
+<body>
+</body>
+</html>

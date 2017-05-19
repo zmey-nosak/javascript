@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = [2, 3, 7, 13, 5, 0, 20];
+        var min = a[0];
+        for (var i = 1; i < a.length; i++) {
+            if (min > a[i]) {
+                min = a[i];
+            }
+        }
+        var max = 0;
+        for (var i = 1; i < a.length; i++) {
+            if (max < a[i]) {
+                max = a[i];
+            }
+        }
+        document.write("min:" + min + ", max:" + max);
+    </script>
+</head>
+<body>
+</body>
+</html>

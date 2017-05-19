@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var mas=[];
+        console.time("stack");
+        for (var i = 0; i < 50000; i++) {
+            mas.push(i);
+        }
+      /*  for (var i = 0; i < 50000; i++) {
+            mas.pop();
+        }*/
+        console.timeEnd("stack");
+
+        console.time("queue");
+        for (var i = 0; i < 50000; i++) {
+            mas.unshift(i);
+        }
+
+      /*  for (var i = 0; i < 50000; i++) {
+            mas.shift();
+        }*/
+        console.timeEnd("queue")
+    </script>
+</head>
+<body>
+</body>
+</html>
