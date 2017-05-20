@@ -94,8 +94,8 @@
       <file leaf-file-name="task3_3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/html/task3_3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="484">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -322,7 +322,7 @@
       <workItem from="1494949897490" duration="6791000" />
       <workItem from="1495042416051" duration="2032000" />
       <workItem from="1495121584067" duration="8619000" />
-      <workItem from="1495219191166" duration="3194000" />
+      <workItem from="1495219191166" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="homework&#10;">
       <created>1494950164374</created>
@@ -366,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495221775268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add task3_1 and task3_2&#10;add task3_3">
+      <created>1495258748552</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495258748552</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20636000" />
+    <option name="totallyTimeSpent" value="20903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -800,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/html/task3_3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="484">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>

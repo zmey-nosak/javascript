@@ -7,20 +7,20 @@
         var str = prompt("Введите пароль:");
 
         var symCnt = /.{9,}/ig;
-        var isCorrectSymbols = /[^A-z\d!$#%]+/ig;
+        var isIncorrectSymbols = /[^A-z\d!$#%]+/ig;
         var numberCnt = /\d{1,}?.+\d{1,}?/ig;
         var specSymbols=/[!$#%]/ig;
 
         if(!symCnt.test(str)){
             document.write("Д.б. не менее 9 символов</br>");
         }
-        if(!isCorrectSymbols.test(str)){
+        if(isIncorrectSymbols.test(str)){
             document.write("Д.б. A-z и цифры и !$#%</br>");
         }
         if(!numberCnt.test(str)){
             document.write("Д.б. не меньше 2 цифр</br>");
         }
-        if(specSymbols.test(str)){
+        if(!specSymbols.test(str)){
             document.write("Д.б. спец. символы</br>");
         }
     </script>
