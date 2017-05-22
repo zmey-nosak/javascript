@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var obj = {
+            name: "Peter",
+            obj2: {
+                name2: "Alex"
+            }
+        };
+        var getFields = function (obj) {
+            if (typeof obj === 'object') {
+                for (var o in obj) {
+                    document.write(o + "</br>");
+                    if (typeof obj[o] === 'object') {
+                        getFields(obj[o]);
+                    }
+                }
+            }
+        };
+        getFields(obj);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+</head>
+<body>
+<span class="board">
+    <span id="0" class="cell_empty"></span>
+    <span id="1" class="cell_empty"></span>
+    <span id="2" class="cell_empty"></span>
+    <span id="3" class="cell_empty"></span>
+    <span id="4" class="cell_empty"></span>
+    <span id="5" class="cell_empty"></span>
+    <span id="6" class="cell_empty"></span>
+    <span id="7" class="cell_empty"></span>
+    <span id="8" class="cell_empty"></span>
+</span>
+<!--<div class="cell_empty">-->
+</body>
+<script>
+    var area = [1, null, 0, null, 1, null, null, null, null];
+    var areaHtml = [];
+    for (var i = 0; i < area.length; i++) {
+        var cell = document.getElementById(i + "");
+        if (area[i] == 1) {
+
+            cell.setAttribute("class", 'cell_krest');
+        }
+        else if (area[i] == 0) {
+            cell.setAttribute("class", 'cell_nol');
+        }
+        else {
+            document.getElementById(i + "").className = 'cell_empty';
+        }
+    }
+
+</script>
+</html>

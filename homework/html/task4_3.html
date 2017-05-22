@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var area = [12, 4, 3, 10, 1, 20];
+        var min = 0;
+        var max = 0;
+        for (var i = 1; i < area.length; i++) {
+            if (area[min] > area[i]) {
+                min = i;
+            }
+//            if (area[max] < area[i]) {
+//                max = i;
+//            }
+        }
+        area.splice(min, 1);
+
+        for (var i = 1; i < area.length; i++) {
+            if (area[max] < area[i]) {
+                max = i;
+            }
+        }
+        area.splice(max, 1);
+        document.write(area.toString());
+    </script>
+</head>
+<body>
+</body>
+
+</html>

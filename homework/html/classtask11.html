@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var min = 3;
+        var max = 5;
+        var symbCnt = Math.floor(Math.random() * (max - min + 1) + min);
+
+//        var triger = Math.round(Math.random());
+        var alphabetGlass = "уеыаоэяиюа";
+        var alphabetSogl = "бвгджзлмнрькпстфхцчшщъ";
+        var rndGlass = Math.floor(Math.random() * (alphabetGlass.length - 1 + 1) + 1);
+        var rndSogl = Math.floor(Math.random() * (alphabetSogl.length - 1 + 1) + 1);
+
+        var str = "";
+        var firstSogl;
+        if (triger == 0) {
+            str += alphabetSogl[(Math.floor(Math.random() * (alphabetSogl.length - 1 + 1) + 1)) - 1];
+            firstSogl = true;
+        }
+        else {
+            str += alphabetGlass[(Math.floor(Math.random() * (alphabetGlass.length - 1 + 1) + 1)) - 1];
+            firstSogl = false;
+        }
+
+        for (var i = 2; i <= symbCnt; i++) {
+            if (i % 2 == 0 && firstSogl) {
+                str += alphabetGlass[(Math.floor(Math.random() * (alphabetGlass.length - 1 + 1) + 1)) - 1];
+            } else {
+                str += alphabetSogl[(Math.floor(Math.random() * (alphabetSogl.length - 1 + 1) + 1)) - 1];
+            }
+        }
+        document.write(str);
+    </script>
+</head>
+<body>
+</body>
+</html>
