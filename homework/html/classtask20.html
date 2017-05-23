@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var cat = {
+            name: "Барсик",
+            age: 25,
+            keyword: "Мяу",
+        };
+        var dog = {
+            name: "Балбес",
+            age: 30,
+            keyword: "Гав",
+        };
+
+        function logHello() {
+            return this.name+" ";
+        }
+
+        cat.voice = logHello;
+        dog.voice = logHello;
+
+        document.write(cat.voice());
+        document.write(dog.voice());
+    </script>
+</head>
+<body>
+</body>
+</html>

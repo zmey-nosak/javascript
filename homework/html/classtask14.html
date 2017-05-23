@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function pow(x, n) {
+            if (n == 0)return 1;
+            if (n == 1) return x;
+            document.title=(n-1);
+            return x * pow(x, n - 1);
+        }
+        document.write(pow(2,433));
+    </script>
+</head>
+<body>
+</body>
+</html>

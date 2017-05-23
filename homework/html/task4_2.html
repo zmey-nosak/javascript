@@ -4,39 +4,103 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-
-
+    <script>
+        var cells = [];
+        var areaSize = 3;
+        var area = [null, null, null,
+            null, null, null,
+            null, null, null];
+        var trigger = true;
+        var isTheEnd = false;
+        window.onload = function () {
+            for (var i = 0; i < area.length; i++) {
+                var cell = document.getElementById(i + "");
+                cells.push(cell);
+                cell.onclick = function () {
+                    if (area[cells.indexOf(this)] == null && !isTheEnd) {
+                        if (trigger) {
+                            this.setAttribute("class", 'cell_krest_t');
+                            area[cells.indexOf(this)] = 1;
+                            check(1);
+                        }
+                        else {
+                            this.setAttribute("class", 'cell_nol_t');
+                            area[cells.indexOf(this)] = 0;
+                            check(0);
+                        }
+                        trigger = !trigger;
+                    }
+                };
+            }
+        };
+        1=0
+        2=3
+        3=6
+        3
+        function checkVariant(variantNum, num) {
+            if(variantNum==1){
+                for (var i = areaSize-(area.length-areaSize*); i <= areaSize * areaSize + 2; i++) {
+                    if (area[i] != num) isVin = false;
+                }
+            }
+        }
+        function check(num) {
+            var isVin = true;
+            for (var i = 1; i <= areaSize * areaSize + 2; i++) {
+                if (area[i] != num) isVin = false;
+            }
+            for (var i = areaSize; i < areaSize + areaSize; i++) {
+                if (area[i] != num) isVin = false;
+            }
+            for (var i = areaSize; i < areaSize + areaSize; i++) {
+                if (area[i] != num) isVin = false;
+            }
+            if ((area[0] == num && area[1] == num && area[2] == num)
+                || (area[3] == num && area[4] == num && area[5] == num)
+                || (area[6] == num && area[7] == num && area[8] == num)
+                || (area[0] == num && area[4] == num && area[8] == num)
+                || (area[2] == num && area[4] == num && area[6] == num)
+                || (area[0] == num && area[3] == num && area[6] == num)
+                || (area[1] == num && area[4] == num && area[7] == num)
+                || (area[2] == num && area[5] == num && area[8] == num)) {
+                isTheEnd = true;
+                document.getElementById('text').innerText = 'The end!';
+            }
+        }
+    </script>
 </head>
 <body>
-<span class="board">
-    <span id="0" class="cell_empty"></span>
-    <span id="1" class="cell_empty"></span>
-    <span id="2" class="cell_empty"></span>
-    <span id="3" class="cell_empty"></span>
-    <span id="4" class="cell_empty"></span>
-    <span id="5" class="cell_empty"></span>
-    <span id="6" class="cell_empty"></span>
-    <span id="7" class="cell_empty"></span>
-    <span id="8" class="cell_empty"></span>
-</span>
+
+<table class="board_t">
+    <tr>
+        <td id="0" class="cell_empty_t"></td>
+        <td id="1" class="cell_empty_t"></td>
+        <td id="2" class="cell_empty_t"></td>
+    </tr>
+    <tr>
+        <td id="3" class="cell_empty_t"></td>
+        <td id="4" class="cell_empty_t"></td>
+        <td id="5" class="cell_empty_t"></td>
+    </tr>
+    <tr>
+        <td id="6" class="cell_empty_t"></td>
+        <td id="7" class="cell_empty_t"></td>
+        <td id="8" class="cell_empty_t"></td>
+    </tr>
+</table>
+<div id="text"></div>
+<!--<span class="board">-->
+<!--<span id="0" class="cell_empty"></span>-->
+<!--<span id="1" class="cell_empty"></span>-->
+<!--<span id="2" class="cell_empty"></span>-->
+<!--<span id="3" class="cell_empty"></span>-->
+<!--<span id="4" class="cell_empty"></span>-->
+<!--<span id="5" class="cell_empty"></span>-->
+<!--<span id="6" class="cell_empty"></span>-->
+<!--<span id="7" class="cell_empty"></span>-->
+<!--<span id="8" class="cell_empty"></span>-->
+<!--</span>-->
 <!--<div class="cell_empty">-->
 </body>
-<script>
-    var area = [1, null, 0, null, 1, null, null, null, null];
-    var areaHtml = [];
-    for (var i = 0; i < area.length; i++) {
-        var cell = document.getElementById(i + "");
-        if (area[i] == 1) {
 
-            cell.setAttribute("class", 'cell_krest');
-        }
-        else if (area[i] == 0) {
-            cell.setAttribute("class", 'cell_nol');
-        }
-        else {
-            document.getElementById(i + "").className = 'cell_empty';
-        }
-    }
-
-</script>
 </html>

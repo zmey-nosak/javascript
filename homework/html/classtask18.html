@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var makeCounter = function () {
+            var count = 0;
+            return function fn2() {
+                return ++count;
+            }
+        };
+
+        var counter = makeCounter();
+        for (var i = 0; i < 25; i++) {
+            counter();
+        }
+        document.write(counter());
+
+
+        var f = document.write(); // P объявлен как delegate void P();
+        for (var i = 0; i < 4; i++) {
+             f(document.write(i));
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -52,3 +52,41 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.cell_empty_t {
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    border: 1px solid black;
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+.cell_nol_t{
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    background-image: url("img/nol.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cell_krest_t {
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border: 1px solid black;
+    margin: 0;
+    background-image: url("img/krest.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.board_t{
+    /*border-spacing: 0;*/
+    border: 1px;
+    border-collapse: collapse;
+}

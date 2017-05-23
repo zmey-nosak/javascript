@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var mas = [1, 3, 5, -5, 4, -2, -1];
+
+        function filter(mas, predicate) {
+            var new_mas = [];
+            for (var i = 0; i < mas.length; i++) {
+                if (predicate(mas[i])) {
+                    new_mas.push(mas[i]);
+                }
+            }
+            return new_mas;
+        }
+
+//        function predicate(num) {
+//            return num < 0;
+//        }
+
+        document.write(filter(mas, function (n){return n<0;}));
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function karr(number, step) {
+            if (step === undefined) {
+                return function fn2(step) {
+                    return number - step;
+                }
+            } else {
+                return number - step;
+            }
+        }
+        document.write(karr(4)(2));
+
+    </script>
+</head>
+<body>
+</body>
+</html>
