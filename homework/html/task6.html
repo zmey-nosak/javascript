@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        document.write("Task1:</br>")
+        document.write("Task1:</br>");
         var student = {
             firstName: "Peter",
             lastName: "Ivanov",
@@ -15,17 +15,17 @@
                 document.write(this.firstName + " " + this.lastName + ". " + this.old + " years old. Interests:" + this.interests.join(", "));
             }
 
-        }
+        };
         student.aboutMe();
 
-        document.write("</br>Task2:</br>")
+        document.write("</br>Task2:</br>");
         function getFact(n) {
             if (n == 1)return 1;
             return n * (getFact(n - 1));
         }
         document.write("Factorial for number 4 is " + getFact(4));
 
-        document.write("</br>Task3:</br>")
+        document.write("</br>Task3:</br>");
 
         function rnd() {
             var array = [];
