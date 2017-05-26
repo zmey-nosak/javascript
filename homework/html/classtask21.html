@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../scripts/plotly-latest.min.js"></script>
+    <div id="placeholder" style="width: 480px; height: 400px;"></div>
+    <script>
+        var line1 = {
+            x: [],
+            y: [],
+            type: 'scatter'
+        };
+
+        for (var i = 0; i < 20; i++) {
+            line1.x.push(i);
+            line1.y.push(i);
+        }
+        var data = [line1];
+        Plotly.newPlot('placeholder', data);
+    </script>
+</head>
+<body>
+</body>
+</html>

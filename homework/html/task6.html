@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.write("Task1:</br>")
+        var student = {
+            firstName: "Peter",
+            lastName: "Ivanov",
+            old: 20,
+            interests: ["Fishing", "Hockey", "Reading", "Languages"],
+            university: "ITMO",
+            aboutMe: function () {
+                document.write(this.firstName + " " + this.lastName + ". " + this.old + " years old. Interests:" + this.interests.join(", "));
+            }
+
+        }
+        student.aboutMe();
+
+        document.write("</br>Task2:</br>")
+        function getFact(n) {
+            if (n == 1)return 1;
+            return n * (getFact(n - 1));
+        }
+        document.write("Factorial for number 4 is " + getFact(4));
+
+        document.write("</br>Task3:</br>")
+
+        function rnd() {
+            var array = [];
+            return function () {
+                if (array.length === 100) {
+                    array.sort(comparator);
+                    document.write("Array of random numbers consists of:" + array.toString());
+                    return;
+                }
+                var num = getRandomNumber(1, 100);
+                while (array.indexOf(num) !== -1) {
+                    num = getRandomNumber(1, 100);
+                }
+                array.push(num);
+                document.write(num + "\<br>")
+            };
+        }
+        function getRandomNumber(min, max) {
+            return Math.round(Math.random() * (max - min) + min);
+        }
+        function comparator(a, b) {
+            if (a > b)return 1;
+            if (a < b)return -1;
+            if (a === b)return 0;
+        }
+        var f = rnd();
+        for (var i = 0; i <= 100; i++) {
+            f();
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

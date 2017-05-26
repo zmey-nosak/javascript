@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.write("Task1:</br>");
+        var student = {
+            firstName: "Peter",
+            lastName: "Ivanov",
+            old: 20,
+            interests: ["Fishing", "Hockey", "Reading", "Languages"],
+            university: "ITMO",
+            aboutMe: function () {
+                document.write(this.firstName + " " + this.lastName + ". " + this.old + " years old. Interests:" + this.interests.join(", "));
+            }
+
+        }
+        function tellMeAboutStud(stud) {
+            student.aboutMe();
+        }
+        tellMeAboutStud(student);
+
+        document.write("</br>Task2:</br>");
+        var a = [1, 2, 6], b = [2, 3, 7, 8, 6];
+        function arraysUnion(arr1, arr2) {
+            var newArray = [];
+            addUnicNumToArray(newArray, arr1);
+            addUnicNumToArray(newArray, arr2);
+            return newArray;
+        }
+
+        function addUnicNumToArray(arrTo, arrFrom) {
+            for (var i = 0; i < arrFrom.length; i++) {
+                if (arrTo.indexOf(arrFrom[i]) === -1) {
+                    arrTo.push(arrFrom[i]);
+                }
+            }
+        }
+        document.write("[" + a + "] + [" + b + "]=[" + arraysUnion(a, b) + "]");
+
+        document.write("</br>Task3:</br>");
+
+        function getFib(n) {
+            var arr = [1];
+            if (n == 1)return arr;
+            arr.push(1);
+            if (n > 2) {
+                for (var i = 0; i < n - 2; i++) {
+                    arr.push(arr[i] + arr[i + 1]);
+                }
+            }
+            return arr;
+        }
+        document.write("Fibonachi for 5 is:" + getFib(5).toString());
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
