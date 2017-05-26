@@ -54,7 +54,20 @@
         }
         document.write("Fibonachi for 5 is:" + getFib(5).toString());
 
-
+        document.write("</br>Task4:</br>");
+        function getDays(n) {
+            var str = n + "";
+            var num = parseInt(str.substr(str.length - 1, 1));
+            if (num == 1) {
+                str += " день";
+            } else if (num >= 2 && num < 5) {
+                str += " дня";
+            } else if ((num >= 5 && num <= 10) || num == 0) {
+                str += " дней";
+            }
+            return str;
+        }
+        document.write(getDays(110));
     </script>
 </head>
 <body>
