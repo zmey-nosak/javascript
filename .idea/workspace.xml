@@ -114,8 +114,8 @@
       <file leaf-file-name="task5.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/html/task5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+            <state relative-caret-position="440">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -385,7 +385,7 @@
       <workItem from="1495470823387" duration="8038000" />
       <workItem from="1495552582021" duration="11173000" />
       <workItem from="1495726768568" duration="9661000" />
-      <workItem from="1495825263490" duration="3928000" />
+      <workItem from="1495825263490" duration="4593000" />
     </task>
     <task id="LOCAL-00001" summary="homework&#10;">
       <created>1494950164374</created>
@@ -471,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495827593535</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add task3_1 and task3_2&#10;           add task3_3&#10;           add task4&#10;           add task5&#10;           add task6">
+      <created>1495829764181</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1495829764181</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62249000" />
+    <option name="totallyTimeSpent" value="62914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -914,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/html/task5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        <state relative-caret-position="440">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
         </state>
       </provider>
