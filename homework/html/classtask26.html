@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table id="calc">
+    <tbody>
+    <tr>
+        <input id="display">
+    </tr>
+    <tr>
+        <td>C</td>
+
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>/</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>*</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>.</td>
+        <td>=</td>
+        <td>+</td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    function func(e) {
+        if (e.target.tagName === 'TD') {
+            var content = e.target.innerText;
+            if (content === '=') {
+                var result = eval(display.value);
+                display.value = result;
+            }else if(content==='C'){
+                display.value='';
+            }
+            else {
+                display.value += content;
+            }
+        }
+    }
+    calc.addEventListener("click", func, false);
+</script>
+</body>
+</html>

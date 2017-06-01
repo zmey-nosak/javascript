@@ -18,6 +18,17 @@ var myUtils = (function () {
                         tr.append(td);
                     }
                 }
+
+                var a = 1;
+                div.addEventListener('click', function (e) {
+                    if (e.target.tagName === 'TD') {
+                        var content = parseInt(e.target.innerText);
+                        if(content===a){
+                            a++;
+                            e.target.style.backgroundColor="rgb(255,0,0)";
+                        }
+                    }
+                }, false);
             }
         };
         function fillField(field, n, arr) {

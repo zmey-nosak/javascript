@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../scripts/classtask25.js"></script>
+    <style>
+        td {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<input id="input">
+<button id="button">Send</button>
+<ul id="ul"></ul>
+<script>
+    button.addEventListener('click', function (e) {
+        var li = document.createElement('li');
+        if (input.value !== "") {
+            li.innerText = input.value;
+            ul.append(li);
+            input.value = "";
+        }
+    }, false);
+</script>
+</body>
+</html>

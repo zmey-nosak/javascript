@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+    var Iterator = function (from, to) {
+            this.from = from;
+            this.to = to;
+            this.curr = from;
+            this.iterate = function () {
+                if (this.curr === this.to) {
+                    return this.curr;
+                } else if (this.from < this.to) {
+                    return this.curr++;
+                } else if (this.to < this.from) {
+                    return this.curr--;
+                }
+            }
+        }
+        ;
+    var ReverseIterator = function (from, to) {
+        Iterator.call(this, from, to);
+        this.reverserIterate = function () {
+            if (this.curr === this.to) {
+                var tmp = this.to;
+                this.to = this.from;
+                this.from = tmp;
+            }
+            return this.iterate();
+        }
+    };
+
+    var it = new Iterator(0, 5);
+    for (var i = 0; i < 10; i++) {
+        document.write(it.iterate());
+    }
+    document.write("</br>");
+    var reverseIt = new ReverseIterator(5, 0);
+    for (i = 0; i < 10; i++) {
+        document.write(reverseIt.reverserIterate());
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../scripts/classtask25.js"></script>
+    <style>
+        #field {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            background-color: #aaaaaa;
+
+        }
+
+        #square {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+<body>
+<div id="field">
+    <div id="square" style="left: 0;top:0"></div>
+</div>
+<script>
+    document.addEventListener('keydown', function (e) {
+//        var style=getComputedStyle(square);
+        if (e.keyCode === 37) {//left
+            square.style.left = (parseInt(square.style.left) - 4) + "px";
+        }
+        if (e.keyCode === 39) {//right
+            square.style.left = (parseInt(square.style.left) + 4) + "px";
+        }
+        if (e.keyCode === 38) {//up
+            square.style.top = (parseInt(square.style.top) - 4) + "px";
+        }
+        if (e.keyCode === 40) {//down
+            square.style.top = (parseInt(square.style.top) + 4) + "px";
+
+        }
+    }, false)
+</script>
+</body>
+</html>

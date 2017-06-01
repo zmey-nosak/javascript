@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+    var Person = function () {
+        this.toString = function () {
+            return "Аноним" + "</br>";
+        }
+    };
+    Person.concretePerson = function (name) {
+        this.toString = function () {
+            return name + "</br>";
+        }
+    };
+    var anonymousPerson = new Person();
+    document.write(anonymousPerson);
+    var concretePerson = new Person.concretePerson("Dima");
+    document.write(concretePerson);
+</script>
+</body>
+</html>

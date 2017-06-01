@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+    var singleLinkedList = function () {
+        this.lenght = 0;
+        this.head = null;
+        this.push = function (value) {
+            var tmp = new Node(value);
+            if (this.lenght === 0) {
+                this.head = tmp;
+            }
+            else {
+                tmp.next = this.head;
+                this.head = tmp;
+            }
+            this.lenght++;
+        };
+
+        this.pop = function () {
+            if (this.length != 0) {
+                var prev = this.head;
+                this.head = prev.next;
+                this.lenght--;
+                return prev.data;
+            }
+            else return null;
+        };
+
+        this.toString = function () {
+            var str = "";
+            var node = this.head;
+            while (node) {
+                str += node.data + ",";
+                node = node.next;
+            }
+            return str.slice(0, str.length - 1);
+        };
+
+        this.unShift = function (value) {
+            var node = this.head;
+            while (node.next) {
+                node = node.next;
+            }
+            var tmp = new Node(value);
+            node.next = tmp;
+            this.length++
+        };
+    };
+
+    var Node = function (value) {
+        this.data = value;
+        this.next = null;
+    };
+
+    var linkedList = new singleLinkedList();
+    linkedList.push(3);
+    linkedList.push(4);
+    linkedList.push(5);
+    console.log(linkedList);
+    //    document.write(linkedList.pop() + "</br>");
+    document.write(linkedList.toString() + "</br>");
+
+    linkedList.unShift(6);
+    document.write(linkedList.toString() + "</br>");
+</script>
+</body>
+</html>
