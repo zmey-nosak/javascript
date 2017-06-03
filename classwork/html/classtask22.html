@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="../scripts/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="../../homework/scripts/plotly-latest.min.js"></script>
     <div id="placeholder" style="width: 480px; height: 400px;"></div>
     <script>
         var line1 = {
@@ -12,10 +12,20 @@
             type: 'scatter'
         };
 
-        for (var i = 0; i < 20; i++) {
-            line1.x.push(i);
-            line1.y.push(i);
+        function calcY(x) {
+            if (x < 0) {
+                return 2 * x + 1;
+            } else if (x >= 0 && x < 2) {
+                return -1.5 * x + 1;
+            } else
+                return x - 4;
         }
+
+        for (var i = -5; i <= 5; i += 0.01) {
+            line1.y.push(calcY(i));
+            line1.x.push(i);
+        }
+
         var data = [line1];
         Plotly.newPlot('placeholder', data);
     </script>
