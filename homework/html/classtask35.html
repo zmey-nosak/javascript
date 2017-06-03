@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+    var obj = {
+        value: 0,
+        increment: function () {
+            this.value++;
+            return this;
+        },
+        add: function (num) {
+            this.value += num;
+            return this;
+        },
+        outAlert: function () {
+            alert(this.value);
+            return this;
+        }
+    };
+
+    obj.increment().add(5).outAlert().value;
+</script>
+</body>
+</html>

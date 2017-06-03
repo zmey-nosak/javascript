@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+    function Storage() {
+        if (Storage.instance)
+            return Storage.instance;
+        this.arr = [];
+        this.set = function (key, data) {
+            this.arr[key] = data;
+        };
+        this.get = function (key) {
+            return this.arr[key];
+        };
+        Storage.instance = this;
+    }
+    var storage = new Storage();
+    var storage2 = new Storage();
+    document.write(storage === storage2);
+
+
+    function Storage2() {
+        var obj;
+        this.arr = [];
+        this.set = function (key, data) {
+            this.arr[key] = data;
+        };
+        this.get = function (key) {
+            return this.arr[key];
+        };
+        obj = this;
+        Storage2 = function () {
+            return obj;
+        }
+    }
+    var storage3 = new Storage2();
+    var storage4 = new Storage2();
+    document.write(storage3 === storage4);
+</script>
+</body>
+</html>
