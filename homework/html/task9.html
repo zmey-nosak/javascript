@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .color {
+            background-color: blue;
+        }
+    </style>
+    <div id="container">
+        <div id="1" class="div">
+        </div>
+        <div id="2" class="div">
+        </div>
+    </div>
+    <button id="btn">1</button>
+    <script>
+        var container = document.getElementById('container');
+        container.addEventListener('click', function (e) {
+            var ids = e.target.getAttribute('id');
+            if (ids == 1 || ids == 2) {
+                e.target.classList.toggle("color");
+            }
+
+        });
+        var button = document.getElementById('btn');
+
+        button.addEventListener('click', function (e) {
+            var el=e.target;
+            if (el.tagName == 'BUTTON') {
+                var val=parseInt(el.innerText)
+                el.innerText=val+1;
+            }
+        })
+
+    </script>
+</head>
+<body>
+</body>
+</html>
