@@ -1,0 +1,59 @@
+<html>
+<header>
+</header>
+<body>
+<script>
+    function Fighter(name, a_min, a_max, def, health) {
+        this.name = name;
+        this.a_min = a_min;
+        this.a_max = a_max;
+        this.def = def;
+        this.health = health;
+
+        Fighter.prototype.attack = function () {
+            return Math.round(Math.random() * (this.a_max - this.a_min) + this.a_min);
+        };
+
+        Fighter.prototype.defence = function (attack) {
+            var damage = attack - this.def;
+            if (damage > 0) {
+                this.health -= damage;
+            }
+        };
+
+    }
+
+    function FightersManager() {
+        this.player1 = new Fighter('Rokky', 10, 20, 15, 100);
+        this.player2 = new Fighter('Drago', 10, 20, 15, 100);
+
+        FightersManager.prototype.fight = function () {
+            this.player1.defence(this.player2.attack());
+
+            if (this.player1.health <= 0) {
+                document.write('Win ' + this.player2.name);
+                return;
+            }
+            this.player2.defence(this.player1.attack());
+
+            if (this.player2.health <= 0) {
+                document.write('Win ' + this.player1.name);
+                return;
+            }
+
+            document.write(this.player1.name + " Health:" + this.player1.health + "</br>");
+            document.write(this.player2.name + " Health:" + this.player2.health + "</br>");
+
+            var that = this;
+            setTimeout(function () {
+                that.fight()
+            }, 2000)
+        }
+    }
+    var fightManager = new FightersManager();
+    fightManager.fight();
+</script>
+</body>
+<footer>
+</footer>
+</html>

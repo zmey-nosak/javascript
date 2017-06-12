@@ -1,0 +1,85 @@
+<html>
+<header>
+    <meta charset="utf-8" content="text/html">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</header>
+<body>
+<div id="text">rrrrrr</div>
+
+<table class="grid">
+    <tr>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>D</td>
+    </tr>
+</table>
+
+<a href="#">Печать</a>
+</br>
+<button id="btn">Текст</button>
+</br>
+<form>
+    <textarea id="input" type="text" maxlength="15"></textarea>
+    <span></span>
+</form>
+<p>dsdsdsdssds sds dsdd sd sd s</p>
+<p>dsdsds dssds sds dsdd sd sd s</p>
+<p>dsdsdsdssds sds dsdd sd sd s</p>
+<p>dsdsds dssds sds dsdd sd sd s</p>
+<p>dsdsdsdssds sds dsdd sd sd s</p>
+<script>
+    $(function () {
+        $(document).contextmenu(function (e) {
+            return false;
+        });
+////////////////////////////////////////////////////////////
+        $('#text').select(function (e) {
+            return false;
+        });
+////////////////////////////////////////////////////////////
+        $('.grid tr').filter(':odd')
+            .css('background', 'orange')
+            .end()
+            .filter(':even')
+            .css('background', 'green');
+////////////////////////////////////////////////////////////
+        $('a').click(function (e) {
+            window.print();
+            return false;
+        });
+////////////////////////////////////////////////////////////
+        $('#btn').one('click', function (e) {
+            $(this).text('New Text');
+            return false;
+        });
+////////////////////////////////////////////////////////////
+        $('#input').keyup(function () {
+            var maxLen = parseInt($(this).attr('maxLength'));
+            var currLen = $(this).val().length;
+            $('span').text(maxLen - currLen);
+        });
+////////////////////////////////////////////////////////////
+        $('p').each(function (ind, el) {
+            var m = $(el).text().replace(/([a-zA-Z]+)/i, "<strong>$1</strong>");
+            $(el).html(m);
+        });
+////////////////////////////////////////////////////////////
+        var div = $('<div>123</div>').css('background', 'red');
+        $(document.body).append(div);
+    });
+    //////////////////////////////////////////////////////////
+    //На сайтие habr
+    //    $('img').filter(function(ind,el){return $(el).height()>100 && $(el).width()>100;}).toArray();
+</script>
+
+<footer>
+</footer>
+</body>
+</html>

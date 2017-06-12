@@ -32,7 +32,7 @@
                 this.head = tmp.next;
                 this.head.prev = null;
                 this.lenght--;
-                return tmp.data;
+                return tmp.key;
             }
             else return null;
         };
@@ -41,7 +41,7 @@
             var str = "";
             var node = this.head;
             while (node) {
-                str += node.data + ",";
+                str += node.key + ",";
                 node = node.next;
             }
             return str.slice(0, str.length - 1);
@@ -66,7 +66,7 @@
                 this.tail = tmp.next;
                 this.tail.next = null;
                 this.lenght--;
-                return tmp.data;
+                return tmp.key;
             }
             else {
                 var tmp = this.tail;
@@ -79,7 +79,7 @@
     };
 
     var Node = function (value) {
-        this.data = value;
+        this.key = value;
         this.next = null;
         this.previous = null;
     };

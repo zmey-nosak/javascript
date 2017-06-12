@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/dist/jszip.min.js"></script>
+</head>
+<body>
+<div>
+    <input type="file" id="input">
+</div>
+<script>
+    $('#input').on('change', function (e) {
+        var dictionary = [];
+        var file = this.files[0];
+        var new_zip = new JSZip();
+        new_zip.loadAsync(file)
+            .then(function (zip) {
+                zip.file("xl/sharedStrings.xml")
+                    .async("string")
+                    .then(function (data) {
+                        var dic = $.parseXML(data);
+                        dictionary = $(dic).find('t').map(function (inD, el) {
+                            return $(el).text();
+                        }).toArray();
+                        console.log(dictionary);
+                        newF(zip);
+                    });
+            });
+    });
+
+    function newF(zip) {
+        zip.file("xl/worksheets/sheet1.xml")
+            .async("string")
+            .then(function (data) {
+                var dic = $.parseXML(data);
+                console.log(dic);
+                for (var i = 0; i < 10; i++) {
+                  var tempR=  $(dic).find('r');
+                  var c
+                    if(temp.attr())
+                }
+            });
+    }
+</script>
+</body>
+</html>

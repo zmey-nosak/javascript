@@ -28,7 +28,7 @@
                 var prev = this.head;
                 this.head = prev.next;
                 this.lenght--;
-                return prev.data;
+                return prev.key;
             }
             else return null;
         };
@@ -37,7 +37,7 @@
             var str = "";
             var node = this.head;
             while (node) {
-                str += node.data + ",";
+                str += node.key + ",";
                 node = node.next;
             }
             return str.slice(0, str.length - 1);
@@ -55,7 +55,7 @@
     };
 
     var Node = function (value) {
-        this.data = value;
+        this.key = value;
         this.next = null;
     };
 
