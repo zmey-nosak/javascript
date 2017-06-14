@@ -1,209 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fec926e-a8d2-4275-bdff-4f594f2e482f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/images/layers-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/images/layers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/images/marker-icon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/images/marker-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/images/marker-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/img/bullet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/img/enemy1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/img/playerGun.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all-stream.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all.7zip.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all.windows.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all_appended_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all_missing_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/all_prepended_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/archive_comment.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/backslash.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/complex_files/AntarcticaTemps.ods" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/complex_files/AntarcticaTemps.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/complex_files/Franz Kafka - The Metamorphosis.epub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/complex_files/Outlook2007_Calendar.xps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/data_descriptor.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/deflate-stream.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/deflate.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/empty.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/encrypted.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/extra_attributes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/folder.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/image.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/invalid/bad_decompressed_size.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/invalid/bad_offset.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/invalid/compression.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/invalid/crc32.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/local_encoding_in_name.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/nested.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/nested_data_descriptor.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/nested_zip64.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/linux_7z.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/linux_ark.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/linux_file_roller-ubuntu.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/linux_file_roller-xubuntu.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/linux_zip.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/mac_finder.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/windows_7z.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/windows_compressed_folders.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/windows_izarc.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/permissions/windows_winrar.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/pile_of_poo.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/slashes_and_izarc.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/store-stream.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/store.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/subfolder.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/text.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/utf8.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/utf8_in_name.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/winrar_utf8_in_name.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/zip64.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/zip64_appended_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/zip64_missing_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/ref/zip64_prepended_bytes.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/css/leaflet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/css/script.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/classtask36.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/classtask37.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/classtask38.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/classtask39.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/excel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/jQuery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/js/myUtils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.codeclimate.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.jshintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/CHANGES.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/LICENSE.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/dist/jszip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/dist/jszip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/docs/APPNOTE.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/docs/ZIP spec.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/docs/references.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/constructor.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/external.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/file_data.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/file_name.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/file_regex.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/filter.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/folder_data.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/folder_regex.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/for_each.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/generate_async.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/generate_internal_stream.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/generate_node_stream.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/load_async.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/load_async_object.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/remove.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/support.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_jszip/version.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_streamhelper.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_streamhelper/accumulate.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_streamhelper/on.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_streamhelper/pause.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_streamhelper/resume.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_zipobject.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_zipobject/async.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_zipobject/internal_stream.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/api_zipobject/node_stream.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/contributing.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/css/pygments.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples/download-zip-file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples/downloader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples/downloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples/get-binary-files-ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/examples/read-local-file-api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/faq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/howto/read_zip.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/howto/write_zip.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/limitations.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/documentation/upgrade_guide.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/base64.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/compressedObject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/compressions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/crc32.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/external.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/flate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/generate/ZipFileWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/generate/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/license_header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/nodejs/NodejsStreamInputAdapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/nodejs/NodejsStreamOutputAdapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/nodejsUtils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/readable-stream-browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/ArrayReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/DataReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/NodeBufferReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/StringReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/Uint8ArrayReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/reader/readerFor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/signature.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/ConvertWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/Crc32Probe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/DataLengthProbe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/DataWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/GenericWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/stream/StreamHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/utf8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/zipEntries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/zipEntry.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/lib/zipObject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/delete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/external.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/foreach.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/generate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/permissions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/unicode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/asserts/version.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/helpers/browser-test-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/helpers/node-test-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/helpers/test-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/test/jquery-1.8.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/Stuk-jszip-v3.1.3-3-gab3829a/Stuk-jszip-ab3829a/vendor/FileSaver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/leaflet-src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/scripts/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seaBattle/html/seaBattle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seaBattle/js/doubleLinkedList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seaBattle/js/game.js" />
+    <list default="true" id="0fec926e-a8d2-4275-bdff-4f594f2e482f" name="Default" comment="add task3_1 and task3_2&#10;           add task3_3&#10;           add task4&#10;           add task5&#10;           add task6&#10;           complete task8&#10;           complete task7&#10;           complete task9&#10;           correct task7">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/html/exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/html/classtask32.html" afterPath="$PROJECT_DIR$/classwork/html/classtask32.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/html/classtask33.html" afterPath="$PROJECT_DIR$/classwork/html/classtask33.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/scripts/taskManager.js" afterPath="$PROJECT_DIR$/classwork/scripts/taskManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/scripts/plotly-latest.min.js" afterPath="$PROJECT_DIR$/homework/scripts/plotly-latest.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/html/classtask36.html" afterPath="$PROJECT_DIR$/classwork/html/classtask36.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/html/classtask39.html" afterPath="$PROJECT_DIR$/classwork/html/classtask39.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seaBattle/js/game.js" afterPath="$PROJECT_DIR$/seaBattle/js/game.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -219,22 +23,87 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="javascript" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seaBattle/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
+            <state relative-caret-position="884">
+              <caret line="523" column="13" lean-forward="true" selection-start-line="523" selection-start-column="13" selection-end-line="523" selection-end-column="13" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#15817#15911#0" expanded="false" />
-                <element signature="e#15956#18586#0" expanded="false" />
-                <element signature="e#18638#19325#0" expanded="false" />
-                <element signature="e#19371#20172#0" expanded="false" />
-                <element signature="e#20234#21419#0" expanded="false" />
-                <element signature="e#21506#21856#0" expanded="false" />
+                <element signature="e#2338#4695#0" expanded="false" />
+                <element signature="e#4756#5647#0" expanded="false" />
+                <element signature="e#8725#8758#0" expanded="false" />
+                <element signature="e#8822#8923#0" expanded="false" />
+                <element signature="e#8986#9157#0" expanded="false" />
+                <element signature="e#9199#9717#0" expanded="false" />
+                <element signature="e#9756#9799#0" expanded="false" />
+                <element signature="e#9846#10044#0" expanded="false" />
+                <element signature="e#10092#10758#0" expanded="false" />
+                <element signature="e#10977#11035#0" expanded="false" />
+                <element signature="e#11078#11143#0" expanded="false" />
+                <element signature="e#11177#11251#0" expanded="false" />
+                <element signature="e#11261#11292#0" expanded="false" />
+                <element signature="e#11761#11894#0" expanded="false" />
+                <element signature="e#16114#16153#0" expanded="false" />
+                <element signature="e#21089#21128#0" expanded="false" />
+                <element signature="e#22865#24823#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EcmaScript6.js" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript6.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="501" column="21" lean-forward="false" selection-start-line="501" selection-start-column="14" selection-end-line="501" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classtask38.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/html/classtask38.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="49" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classtask37.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/html/classtask37.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classtask36.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/html/classtask36.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <folding>
+                <marker date="1497374667039" expanded="true" signature="514:520" ph="©" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classtask39.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/html/classtask39.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,12 +111,9 @@
       <file leaf-file-name="doubleLinkedList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seaBattle/js/doubleLinkedList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
+            <state relative-caret-position="706">
               <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-              <folding>
-                <element signature="e#1095#1787#0" expanded="false" />
-                <element signature="e#1823#2003#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -255,58 +121,8 @@
       <file leaf-file-name="seaBattle.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seaBattle/html/seaBattle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classwork/html/classtask2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classwork/html/classtask3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classwork/html/classtask4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classwork/html/classtask5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtask6.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classwork/html/classtask6.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -315,7 +131,7 @@
       <file leaf-file-name="classtask7.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classwork/html/classtask7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-8">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -325,8 +141,8 @@
       <file leaf-file-name="classtask8.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classwork/html/classtask8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="-8">
+              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="15" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -345,19 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>0</find>
-      <find>image</find>
-      <find>icon</find>
-      <find>images</find>
-      <find>seaMap.showDialogBox</find>
-      <find>seaBattle.openShip</find>
-      <find>SIZE</find>
-      <find>ma</find>
-      <find>setOwnCoordinates</find>
-      <find>computerFields</find>
-      <find>showComputerShips</find>
-      <find>leng</find>
-      <find>length</find>
       <find>lenght</find>
       <find>start</find>
       <find>isIntersectWithAnotherShip</find>
@@ -369,9 +172,25 @@
       <find>seto</find>
       <find>showDestroyFieldOnComputerMap</find>
       <find>showco</find>
-      <find>ships</find>
       <find>show</find>
       <find>seaMa</find>
+      <find>map</find>
+      <find>isExistShips</find>
+      <find>ships</find>
+      <find>new Ma</find>
+      <find>Ma</find>
+      <find>entr</find>
+      <find>has</find>
+      <find>set</find>
+      <find>conta</find>
+      <find>get</find>
+      <find>coord</find>
+      <find>coordinatesOfShips</find>
+      <find>502</find>
+      <find>cl</find>
+      <find>checkShoot</find>
+      <find>getPoss</find>
+      <find>getAllPoints</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -380,7 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/homework/scripts/task01.js" />
         <option value="$PROJECT_DIR$/homework/html/classtask23.html" />
         <option value="$PROJECT_DIR$/homework/html/task5.html" />
         <option value="$PROJECT_DIR$/homework/html/task6.html" />
@@ -414,7 +232,6 @@
         <option value="$PROJECT_DIR$/homework/html/task7_3.html" />
         <option value="$PROJECT_DIR$/classwork/html/classtask28.html" />
         <option value="$PROJECT_DIR$/homework/html/task7_1.html" />
-        <option value="$PROJECT_DIR$/classwork/html/classtask36.html" />
         <option value="$PROJECT_DIR$/homework/html/task9.html" />
         <option value="$PROJECT_DIR$/classwork/scripts/leaflet.js" />
         <option value="$PROJECT_DIR$/classwork/html/classtask37.html" />
@@ -423,19 +240,27 @@
         <option value="$PROJECT_DIR$/classwork/js/myUtils.js" />
         <option value="$PROJECT_DIR$/classwork/scripts/jquery.js" />
         <option value="$PROJECT_DIR$/classwork/html/jQuery.html" />
-        <option value="$PROJECT_DIR$/classwork/html/classtask39.html" />
         <option value="$PROJECT_DIR$/classwork/css/script.css" />
         <option value="$PROJECT_DIR$/classwork/scripts/script.js" />
         <option value="$PROJECT_DIR$/classwork/html/1.html" />
         <option value="$PROJECT_DIR$/classwork/html/excel.html" />
         <option value="$PROJECT_DIR$/seaBattle/html/seaBattle.html" />
         <option value="$PROJECT_DIR$/seaBattle/js/doubleLinkedList.js" />
+        <option value="$PROJECT_DIR$/classwork/html/exception.html" />
+        <option value="$PROJECT_DIR$/classwork/html/classtask39.html" />
+        <option value="$PROJECT_DIR$/classwork/html/classtask36.html" />
         <option value="$PROJECT_DIR$/seaBattle/js/game.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -553,24 +378,6 @@
               <option name="myItemId" value="classwork" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classwork" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -596,32 +403,53 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.23212537" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\frontend\javascript\classwork\html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\frontend\javascript\classwork\scripts" />
       <recent name="D:\frontend\javascript\classwork\html" />
+      <recent name="D:\frontend\javascript\classwork\scripts" />
       <recent name="D:\frontend\javascript\classwork\css" />
       <recent name="D:\frontend\javascript\classwork\js" />
       <recent name="D:\frontend\javascript\classwork" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\frontend\javascript\classwork\html" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -705,7 +533,11 @@
       <workItem from="1496763558461" duration="10612000" />
       <workItem from="1496856523550" duration="16278000" />
       <workItem from="1497021525075" duration="22718000" />
-      <workItem from="1497108542689" duration="62593000" />
+      <workItem from="1497108542689" duration="62823000" />
+      <workItem from="1497368328624" duration="741000" />
+      <workItem from="1497370392811" duration="1805000" />
+      <workItem from="1497374039292" duration="1227000" />
+      <workItem from="1497459493780" duration="15893000" />
     </task>
     <task id="LOCAL-00001" summary="homework&#10;">
       <created>1494950164374</created>
@@ -861,21 +693,36 @@
       <option name="project" value="LOCAL" />
       <updated>1496693794257</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add task3_1 and task3_2&#10;           add task3_3&#10;           add task4&#10;           add task5&#10;           add task6&#10;           complete task8&#10;           complete task7&#10;           complete task9&#10;           correct task7">
+      <created>1497299286348</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1497299286348</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225935000" />
+    <option name="totallyTimeSpent" value="245831000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25185972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25157562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27944326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -913,52 +760,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask26.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask27.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask28.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask29.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask30.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classwork/html/classtask31.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
           <caret line="41" column="13" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="41" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="54822" column="12" lean-forward="false" selection-start-line="54822" selection-start-column="12" selection-end-line="54822" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,18 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classwork/html/classtask39.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1638">
-          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classwork/js/myUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,15 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5994">
-          <caret line="643" column="3" lean-forward="true" selection-start-line="643" selection-start-column="3" selection-end-line="643" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,13 +1030,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/html/exception.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classwork/html/classtask7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-8">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1276,43 +1051,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classwork/html/classtask8.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="-8">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/html/classtask36.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <marker date="1497374667039" expanded="true" signature="514:520" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/html/classtask37.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="501" column="21" lean-forward="false" selection-start-line="501" selection-start-column="14" selection-end-line="501" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seaBattle/html/seaBattle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seaBattle/js/doubleLinkedList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
+        <state relative-caret-position="706">
           <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-          <folding>
-            <element signature="e#1095#1787#0" expanded="false" />
-            <element signature="e#1823#2003#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seaBattle/html/seaBattle.html">
+    <entry file="file://$PROJECT_DIR$/classwork/html/classtask39.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        <state relative-caret-position="22">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/html/classtask38.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="49" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seaBattle/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="523" column="13" lean-forward="true" selection-start-line="523" selection-start-column="13" selection-end-line="523" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#15817#15911#0" expanded="false" />
-            <element signature="e#15956#18586#0" expanded="false" />
-            <element signature="e#18638#19325#0" expanded="false" />
-            <element signature="e#19371#20172#0" expanded="false" />
-            <element signature="e#20234#21419#0" expanded="false" />
-            <element signature="e#21506#21856#0" expanded="false" />
+            <element signature="e#2338#4695#0" expanded="false" />
+            <element signature="e#4756#5647#0" expanded="false" />
+            <element signature="e#8725#8758#0" expanded="false" />
+            <element signature="e#8822#8923#0" expanded="false" />
+            <element signature="e#8986#9157#0" expanded="false" />
+            <element signature="e#9199#9717#0" expanded="false" />
+            <element signature="e#9756#9799#0" expanded="false" />
+            <element signature="e#9846#10044#0" expanded="false" />
+            <element signature="e#10092#10758#0" expanded="false" />
+            <element signature="e#10977#11035#0" expanded="false" />
+            <element signature="e#11078#11143#0" expanded="false" />
+            <element signature="e#11177#11251#0" expanded="false" />
+            <element signature="e#11261#11292#0" expanded="false" />
+            <element signature="e#11761#11894#0" expanded="false" />
+            <element signature="e#16114#16153#0" expanded="false" />
+            <element signature="e#21089#21128#0" expanded="false" />
+            <element signature="e#22865#24823#0" expanded="false" />
           </folding>
         </state>
       </provider>

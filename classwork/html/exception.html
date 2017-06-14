@@ -1,0 +1,27 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</header>
+<body>
+
+<script>
+    while (true) {
+        try {
+            var result = eval(getStatement());
+            if (isNaN(result)) throw new Error("NaN");
+            else if (isFinite(result)) throw new Error("Finite");
+            break;
+        } catch (e) {
+            alert(e.name);
+        }
+
+    }
+    function getStatement() {
+        return prompt("give a statement");
+    }
+</script>
+</body>
+<footer>
+</footer>
+</html>

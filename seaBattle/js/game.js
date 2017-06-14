@@ -6,34 +6,49 @@
         Game.SHIPS_COUNT = 10;
         this.seaMapComputer = new SeaMap();
         this.seaMapUser = new SeaMap();
-        this.compPlayer = new Player();
-        this.userPlayer = new Player();
+
+        this.compPlayer = new Player(this.seaMapComputer);
+        this.userPlayer = new Player(this.seaMapUser);
 
         this.isGameOver = false;
-        this.seaBattle = new SeaBattle(this.seaMapComputer, this.seaMapUser);
+
+        // Map.prototype.containsKey = function (key) {
+        //     for (let k of this.keys()) {
+        //         if (k.equals(key)) {
+        //             return true;
+        //         }
+        //     }
+        // };
+
         this.startGame = function () {
             this.seaMapComputer.show("computer_map");
             this.seaMapUser.show("user_map");
-            console.time("stack");
-            this.seaBattle.generateComputerShips();
-            console.timeEnd("stack");
+            this.compPlayer.generateShips();
+            this.userPlayer.generateShips();
             var that = this;
+            // for (var i = 0; i < 20; i++) {
+            setInterval(function () {
+                that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots);
+            }, 1000);
+            // }
             $("#computer_map .cell").click(function (e) {
                 var arr = $(this).attr("id").split(":");
                 var shoot = new Point(parseInt(arr[0]), parseInt(arr[1]));
-                that.seaBattle.checkShoot(shoot);
+                that.compPlayer.checkShoot(shoot, this.userPlayer.lastCorrectShoots);
             });
-            document.write(this.seaBattle.computerShips);
-            this.seaMapComputer.showShips(this.seaBattle.computerShips);
+            // document.write(this.compPlayer.ships);
+            // document.write("<p>----------</p>");
+            // document.write(this.userPlayer.ships);
+            // this.seaMapComputer.showShips(this.seaBattle.ships);
         }
     };
 
     function Point(x, y) {
         this.x = x;
         this.y = y;
-        this.equals = function (point) {
-            return this.x === point.x && this.y === point.y;
-        };
+        this.toString = function () {
+            return "(" + x + "," + y + ")";
+        }
     }
 
     function Ship(numOfDecks) {
@@ -137,14 +152,14 @@
             if (!this.isHorizontal) {
                 for (var i = 0; i < this.countOfDecks; i++) {
                     point = new Point(this.endPoint.x, this.endPoint.y - i);
-                    map.put(point, this);
+                    map.set(point.toString(), this);
                     setPoints.push(parseInt(point.y + "" + point.x));
                     console.log("fill x, y:" + point.x + "," + point.y);
                 }
             } else {
                 for (var i = 0; i < this.countOfDecks; i++) {
                     point = new Point(this.endPoint.x - i, this.endPoint.y);
-                    map.put(point, this);
+                    map.set(point.toString(), this);
                     setPoints.push(parseInt(point.y + "" + point.x));
                     console.log("fill x, y:" + point.x + "," + point.y);
                 }
@@ -206,126 +221,7 @@
         }
     }
 
-    function SeaBattle(seaMapComputer, seaMapUser) {
-        var seaMapComputer = seaMapComputer;
-        var seaMapUser = seaMapUser;
-        this.freePoints = [];
-        for (var i = 0; i < 100; i++) {
-            this.freePoints.push(i);
-        }
-        this.computerShips = [];
-        this.coordinatesOfShips = new DoubleLinkedList();
-
-
-        this.generateComputerShips = function () {
-            var tmp = {};
-            for (var i = 0; i < Game.SHIPS_COUNT; i++) {
-                if (i < 1) {
-                    tmp = new Ship(4);
-                } else if (i < 3) {
-                    tmp = new Ship(3);
-                } else if (i < 6) {
-                    tmp = new Ship(2);
-                } else {
-                    tmp = new Ship(1);
-                }
-                var isIntersect = true;
-                var randIndex = 0;
-                while (isIntersect) {
-                    isIntersect = false;
-                    randIndex = tmp.setRandomPosition(this.freePoints);
-                    for (var j = 0; j < i; j++) {
-                        console.log("сравниваем " + tmp.toString() + " c " + this.computerShips[j].toString())
-                        if (tmp.isIntersectWithAnotherShip(this.computerShips[j])) {
-                            isIntersect = true;
-                            break;
-                        }
-                    }
-                }
-                var arr = tmp.getAllPoints();
-                this.computerShips[i] = tmp;
-                tmp.setOwnCoordinates(this.coordinatesOfShips);
-                var indexesForDeleting = [];
-                for (var y = 0; y < arr.length; y++) {
-                    for (var j = 0; j < this.freePoints.length; j++) {
-                        if (arr[y] === this.freePoints[j]) {
-                            indexesForDeleting.push(j);
-                        }
-                    }
-                }
-                for (var j = 0; j < indexesForDeleting.length; j++) {
-                    this.freePoints.splice(indexesForDeleting[j], 1);
-                }
-            }
-        };
-
-        this.checkAndCollectPossiblePointsForShooting = function (val, arr) {
-            if (val >= 0 && val <= 99) {
-                arr.push(val);
-            }
-        };
-        this.checkShoot = function (shoot) {
-            if (this.coordinatesOfShips.containsKey(shoot)) {
-                var ship = this.coordinatesOfShips.get(shoot);
-                var s = "Попадание! ";
-                ship.lostHealth();
-                seaMapComputer.showDestroyFieldOnComputerMap(shoot.x, shoot.y);
-                this.coordinatesOfShips.remove(shoot);
-                if (ship.isDestroy) {
-                    s = s + ship.toString() + " потоплен";
-                }
-                this.openEmptyFieldsAroundDestroyDeck(shoot, ship);
-            } else {
-                seaMapComputer.showMissedShootOnComputerMap(shoot.x, shoot.y);
-            }
-        };
-
-        this.openEmptyFieldsAroundDestroyDeck = function (shoot, ship) {
-            if (shoot.y - 1 >= 0 && shoot.x - 1 >= 0) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x - 1);
-                seaMapComputer.showMissedShootOnComputerMap(shoot.x - 1, shoot.y - 1);
-            }
-            if (shoot.y + 1 < SeaMap.SIZE && shoot.x - 1 >= 0) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x - 1);
-                seaMapComputer.showMissedShootOnComputerMap(shoot.x - 1, shoot.y + 1);
-            }
-            if (shoot.y - 1 >= 0 && shoot.x + 1 < SeaMap.SIZE) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x + 1);
-                seaMapComputer.showMissedShootOnComputerMap(shoot.x + 1, shoot.y - 1);
-            }
-            if (shoot.y + 1 < SeaMap.SIZE && shoot.x + 1 < SeaMap.SIZE) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x + 1);
-                seaMapComputer.showMissedShootOnComputerMap(shoot.x + 1, shoot.y + 1);
-            }
-            if (ship.isDestroy) {
-                if (ship.isHorizontal || ship.getCountOfDecks() == 1) {
-                    if (ship.getStartPoint().x - 1 >= 0) {
-                        seaMapComputer.showMissedShootOnComputerMap(ship.getStartPoint().x - 1, ship.getStartPoint().y);
-                    }
-                    if (ship.getEndPoint().x + 1 < SeaMap.SIZE) {
-                        seaMapComputer.showMissedShootOnComputerMap(ship.getEndPoint().x + 1, ship.getEndPoint().y);
-                    }
-                }
-                if (!ship.isHorizontal || ship.getCountOfDecks() == 1) {
-                    if (ship.getStartPoint().y - 1 >= 0) {
-                        seaMapComputer.showMissedShootOnComputerMap(ship.getStartPoint().x, ship.getStartPoint().y - 1);
-                    }
-                    if (ship.getEndPoint().y + 1 < SeaMap.SIZE) {
-                        seaMapComputer.showMissedShootOnComputerMap(ship.getEndPoint().x, ship.getEndPoint().y + 1);
-                    }
-                }
-            }
-        };
-        this.isExistShips = function () {
-            return this.coordinatesOfShips.isEmpty();
-        };
-        this.init = function () {
-            this.clearMap();
-            this.generateComputerShips();
-        };
-    }
-
-    window.SeaMap = function () {
+    function SeaMap() {
         SeaMap.SIZE = 10;
         SeaMap.EMPTYCELL = '.';
         SeaMap.DESTROYCELL = 43;
@@ -394,20 +290,30 @@
                 }
             }
         }
-    };
+    }
 
-    function Player() {
+    function Player(map) {
+        this.map = map;
+        this.coordinatesOfShips = new Map();
         this.lastCorrectShoots = [];
         this.mapForPossibleShoots = [];
         for (var i = 0; i < 100; i++) {
             this.mapForPossibleShoots.push(i);
         }
-        this.map = {};
 
-        this.doShoot = function () {
-            var point = this.getRandomShoot();
-            this.checkShoot(point);
+
+        this.isExistShips = function () {
+            return this.coordinatesOfShips.isEmpty();
         };
+        this.init = function () {
+            this.clearMap();
+            this.generateShips();
+        };
+        // this.doShoot = function () {
+        //     var point = this.getRandomShoot();
+        //     this.checkShoot(point);
+        // };
+
 
         this.getRandomShoot = function () {
             var x = 0;
@@ -417,7 +323,7 @@
             Player.UP = 2;
             Player.RIGHT = 3;
             Player.DOWN = 4;
-
+            console.log("lastCorrectShoots" + this.lastCorrectShoots);
             if (this.lastCorrectShoots.length === 0) {
                 //Выстрел в случайное поле
                 return this.getFinalShootPoint(this.mapForPossibleShoots);
@@ -433,28 +339,48 @@
                     var tailOfShip = 0;
                     var min = 0;
                     var max = 0;
-                    for (var i = 1; i < this.lastCorrectShoots.length - 1; i++) {
+                    console.log("lastCorrectShoots:" + this.lastCorrectShoots);
+
+                    for (var i = 1; i < this.lastCorrectShoots.length; i++) {
                         if (this.lastCorrectShoots[min].y > this.lastCorrectShoots[i].y) {
-                            max = min;
                             min = i;
                         }
                     }
+                    for (var i = 1; i < this.lastCorrectShoots.length; i++) {
+                        if (this.lastCorrectShoots[max].y < this.lastCorrectShoots[i].y) {
+                            max = i;
+                        }
+                    }
+                    console.log("min:" + min);
+                    console.log("max:" + max);
                     headOfShip = this.lastCorrectShoots[min];
                     tailOfShip = this.lastCorrectShoots[max];
+                    console.log("headOfShip:" + headOfShip);
+                    console.log("tailOfShip:" + tailOfShip);
                     var possibleShoots = this.getPossibleShoot(headOfShip.x, headOfShip.y, Player.UP)
                         .concat(this.getPossibleShoot(tailOfShip.x, tailOfShip.y, Player.DOWN));
+                    console.log("possibleShoots after:" + possibleShoots);
                     return this.getFinalShootPoint(possibleShoots);
                 } else {
                     var min = 0;
                     var max = 0;
-                    for (var i = 1; i < this.lastCorrectShoots.length - 1; i++) {
+                    console.log("lastCorrectShoots:" + this.lastCorrectShoots);
+                    for (var i = 1; i < this.lastCorrectShoots.length; i++) {
                         if (this.lastCorrectShoots[min].x > this.lastCorrectShoots[i].x) {
-                            max = min;
                             min = i;
                         }
                     }
+                    for (var i = 1; i < this.lastCorrectShoots.length; i++) {
+                        if (this.lastCorrectShoots[max].x < this.lastCorrectShoots[i].x) {
+                            max = i;
+                        }
+                    }
+                    console.log("min:" + min);
+                    console.log("max:" + max);
                     headOfShip = this.lastCorrectShoots[min];
                     tailOfShip = this.lastCorrectShoots[max];
+                    console.log("headOfShip:" + headOfShip);
+                    console.log("tailOfShip:" + tailOfShip);
                     var arrayForPossibleShoots = this.getPossibleShoot(headOfShip.x, headOfShip.y, Player.LEFT)
                         .concat(this.getPossibleShoot(tailOfShip.x, tailOfShip.y, Player.RIGHT));
                     return this.getFinalShootPoint(arrayForPossibleShoots);
@@ -463,6 +389,7 @@
         };
 
         this.getFinalShootPoint = function (arr) {
+            console.log("possible:" + arr);
             var randIndex = Math.round(Math.random() * (arr.length - 1));
             var value = arr[randIndex];
             if (value < 10) {
@@ -470,53 +397,64 @@
                 y = 0;
             } else {
                 x = value % 10;
-                y = Math.trunc(value);
+                var tmp = value / 10;
+                y = Math.trunc(tmp);
             }
             var indexForRemoving = 0;
             for (indexForRemoving = 0; indexForRemoving < this.mapForPossibleShoots.length; indexForRemoving++) {
-                if (value === this.mapForPossibleShoots[i]) {
+                if (value === this.mapForPossibleShoots[indexForRemoving]) {
                     break;
                 }
             }
             this.mapForPossibleShoots.splice(indexForRemoving, 1);
+            console.log(x + "," + y);
             return new Point(x, y);
+
         };
 
-        this.checkShoot = function (point) {
-            if (this.map.coordinatesOfShips.containsKey(point)) {
-                var ship = this.map.coordinatesOfShips.get(point);
-                this.coordinatesOfShips.remove(point);
-                this.lastCorrectShoots.push(point);
-                ship.lostHealth();
-                var notify = "Попадание! ";
-                this.map.showDestroyFieldOnComputerMap(point.x, point.y);
-                if (ship.isDestroy) {
-                    notify = notify + ship.toString() + " потоплен";
-                    this.lastCorrectShoots.clear();
-                }
-                this.openEmptyFieldsAroundDestroyDeck(point, ship);
-                console.log(notify);
-            }
-            else {
-                map.showMissedShootOnComputerMap(point.x, point.y);
-            }
-        };
+        // this.checkShoot = function (point) {
+        //     if (this.coordinatesOfShips.has(point.toString())) {
+        //         var ship = this.map.coordinatesOfShips.get(point.toString());
+        //         this.coordinatesOfShips.delete(point.toString());
+        //         this.lastCorrectShoots.push(point);
+        //         ship.lostHealth();
+        //         var notify = "Попадание! ";
+        //         this.map.showDestroyFieldOnComputerMap(point.x, point.y);
+        //         if (ship.isDestroy) {
+        //             notify = notify + ship.toString() + " потоплен";
+        //             this.lastCorrectShoots.clear();
+        //         }
+        //         this.openEmptyFieldsAroundDestroyDeck(point, ship);
+        //         console.log(notify);
+        //     }
+        //     else {
+        //         this.map.showMissedShootOnComputerMap(point.x, point.y);
+        //     }
+        // };
 
         this.getPossibleShoot = function (x, y, direction) {
             var arr = [];
             var coordinates = parseInt(y + "" + x);
             switch (direction) {
                 case Player.ALL_SIDES:
-                    this.checkAndCollectPossiblePointsForShooting(coordinates - 1, arr);
+                    if (x - 1 >= 0) {
+                        this.checkAndCollectPossiblePointsForShooting(coordinates - 1, arr);
+                    }
                     this.checkAndCollectPossiblePointsForShooting(coordinates - 10, arr);
-                    this.checkAndCollectPossiblePointsForShooting(coordinates + 1, arr);
+                    if (x + 1 <= 9) {
+                        this.checkAndCollectPossiblePointsForShooting(coordinates + 1, arr);
+                    }
                     this.checkAndCollectPossiblePointsForShooting(coordinates + 10, arr);
                     break;
                 case Player.LEFT:
-                    this.checkAndCollectPossiblePointsForShooting(coordinates - 1, arr);
+                    if (x - 1 >= 0) {
+                        this.checkAndCollectPossiblePointsForShooting(coordinates - 1, arr);
+                    }
                     break;
                 case Player.RIGHT:
-                    this.checkAndCollectPossiblePointsForShooting(coordinates + 1, arr);
+                    if (x + 1 <= 9) {
+                        this.checkAndCollectPossiblePointsForShooting(coordinates + 1, arr);
+                    }
                     break;
                 case Player.UP:
                     this.checkAndCollectPossiblePointsForShooting(coordinates - 10, arr);
@@ -534,6 +472,133 @@
                     if (coordinates === this.mapForPossibleShoots[i]) {
                         arr.push(coordinates);
                         return;
+                    }
+                }
+            }
+        };
+
+        this.generateShips = function () {
+            var ships = [];
+            var coordinatesOfEmptyCells = [];
+            for (var i = 0; i < 100; i++) {
+                coordinatesOfEmptyCells.push(i);
+            }
+            var tmp = {};
+            for (var i = 0; i < Game.SHIPS_COUNT; i++) {
+                if (i < 1) {
+                    tmp = new Ship(4);
+                } else if (i < 3) {
+                    tmp = new Ship(3);
+                } else if (i < 6) {
+                    tmp = new Ship(2);
+                } else {
+                    tmp = new Ship(1);
+                }
+                var isIntersect = true;
+                var randIndex = 0;
+                while (isIntersect) {
+                    isIntersect = false;
+                    randIndex = tmp.setRandomPosition(coordinatesOfEmptyCells);
+                    for (var j = 0; j < i; j++) {
+                        console.log("сравниваем " + tmp.toString() + " c " + ships[j].toString())
+                        if (tmp.isIntersectWithAnotherShip(ships[j])) {
+                            isIntersect = true;
+                            break;
+                        }
+                    }
+                }
+                var arr = tmp.getAllPoints();
+                ships[i] = tmp;
+                tmp.setOwnCoordinates(this.coordinatesOfShips);
+                var indexesForDeleting = [];
+                for (var y = 0; y < arr.length; y++) {
+                    for (var j = 0; j < coordinatesOfEmptyCells.length; j++) {
+                        if (arr[y] === coordinatesOfEmptyCells[j]) {
+                            indexesForDeleting.push(j);
+                        }
+                    }
+                }
+                for (var j = 0; j < indexesForDeleting.length; j++) {
+                    coordinatesOfEmptyCells.splice(indexesForDeleting[j], 1);
+                }
+            }
+        };
+
+        // this.checkAndCollectPossiblePointsForShooting = function (val, arr) {
+        //     if (val >= 0 && val <= 99) {
+        //         arr.push(val);
+        //     }
+        // };
+
+        // this.checkShoot = function (shoot) {
+        //     if (this.coordinatesOfShips.has(shoot.toString())) {
+        //         var ship = this.coordinatesOfShips.get(shoot.toString());
+        //         var s = "Попадание! ";
+        //         ship.lostHealth();
+        //         map.showDestroyFieldOnComputerMap(shoot.x, shoot.y);
+        //         this.coordinatesOfShips.delete(shoot.toString());
+        //         if (ship.isDestroy) {
+        //             s = s + ship.toString() + " потоплен";
+        //         }
+        //         this.openEmptyFieldsAroundDestroyDeck(shoot, ship);
+        //     } else {
+        //         map.showMissedShootOnComputerMap(shoot.x, shoot.y);
+        //     }
+        // };
+        this.checkShoot = function (point, arr) {
+            if (this.coordinatesOfShips.has(point.toString())) {
+                var ship = this.coordinatesOfShips.get(point.toString());
+                this.coordinatesOfShips.delete(point.toString());
+                //say another player to push value in lastCorrectShoots
+                arr.push(point);
+                ship.lostHealth();
+                var notify = "Попадание! ";
+                this.map.showDestroyFieldOnComputerMap(point.x, point.y);
+                if (ship.isDestroy) {
+                    notify = notify + ship.toString() + " потоплен";
+                    //say another player to clear lastCorrectShoots
+                    arr.splice(0);
+                }
+                this.openEmptyFieldsAroundDestroyDeck(point, ship);
+                console.log(notify);
+            }
+            else {
+                this.map.showMissedShootOnComputerMap(point.x, point.y);
+            }
+        };
+
+        this.openEmptyFieldsAroundDestroyDeck = function (shoot, ship) {
+            if (shoot.y - 1 >= 0 && shoot.x - 1 >= 0) {
+                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x - 1);
+                map.showMissedShootOnComputerMap(shoot.x - 1, shoot.y - 1);
+            }
+            if (shoot.y + 1 < SeaMap.SIZE && shoot.x - 1 >= 0) {
+                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x - 1);
+                map.showMissedShootOnComputerMap(shoot.x - 1, shoot.y + 1);
+            }
+            if (shoot.y - 1 >= 0 && shoot.x + 1 < SeaMap.SIZE) {
+                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x + 1);
+                map.showMissedShootOnComputerMap(shoot.x + 1, shoot.y - 1);
+            }
+            if (shoot.y + 1 < SeaMap.SIZE && shoot.x + 1 < SeaMap.SIZE) {
+                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x + 1);
+                map.showMissedShootOnComputerMap(shoot.x + 1, shoot.y + 1);
+            }
+            if (ship.isDestroy) {
+                if (ship.isHorizontal || ship.getCountOfDecks() == 1) {
+                    if (ship.getStartPoint().x - 1 >= 0) {
+                        map.showMissedShootOnComputerMap(ship.getStartPoint().x - 1, ship.getStartPoint().y);
+                    }
+                    if (ship.getEndPoint().x + 1 < SeaMap.SIZE) {
+                        map.showMissedShootOnComputerMap(ship.getEndPoint().x + 1, ship.getEndPoint().y);
+                    }
+                }
+                if (!ship.isHorizontal || ship.getCountOfDecks() == 1) {
+                    if (ship.getStartPoint().y - 1 >= 0) {
+                        map.showMissedShootOnComputerMap(ship.getStartPoint().x, ship.getStartPoint().y - 1);
+                    }
+                    if (ship.getEndPoint().y + 1 < SeaMap.SIZE) {
+                        map.showMissedShootOnComputerMap(ship.getEndPoint().x, ship.getEndPoint().y + 1);
                     }
                 }
             }
