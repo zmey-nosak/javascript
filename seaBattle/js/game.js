@@ -12,14 +12,6 @@
 
         this.isGameOver = false;
 
-        // Map.prototype.containsKey = function (key) {
-        //     for (let k of this.keys()) {
-        //         if (k.equals(key)) {
-        //             return true;
-        //         }
-        //     }
-        // };
-
         this.startGame = function () {
             this.seaMapComputer.show("computer_map");
             this.seaMapUser.show("user_map");
@@ -27,11 +19,14 @@
             this.userPlayer.generateShips();
             var that = this;
             // for (var i = 0; i < 20; i++) {
-            setInterval(function () {
-                that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots);
-            }, 1000);
+            $(document).keydown(function (e) {
+                that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
+            });
+            // setInterval(function () {
+            //     that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
+            // }, 1000);
             // }
-            $("#computer_map .cell").click(function (e) {
+            $("#computer_map").find(".cell").click(function (e) {
                 var arr = $(this).attr("id").split(":");
                 var shoot = new Point(parseInt(arr[0]), parseInt(arr[1]));
                 that.compPlayer.checkShoot(shoot, this.userPlayer.lastCorrectShoots);
@@ -211,9 +206,10 @@
                 }
             }
 
-            console.log(this.toString() + ": " + arr)
+            console.log(this.toString() + ": " + arr);
             return arr;
         };
+
         this.calculatePoint = function (value, arr) {
             if (value >= 0 && value <= 99) {
                 arr.push(value);
@@ -297,23 +293,18 @@
         this.coordinatesOfShips = new Map();
         this.lastCorrectShoots = [];
         this.mapForPossibleShoots = [];
-        for (var i = 0; i < 100; i++) {
+        for (let i = 0; i < 100; i++) {
             this.mapForPossibleShoots.push(i);
         }
-
 
         this.isExistShips = function () {
             return this.coordinatesOfShips.isEmpty();
         };
+
         this.init = function () {
             this.clearMap();
             this.generateShips();
         };
-        // this.doShoot = function () {
-        //     var point = this.getRandomShoot();
-        //     this.checkShoot(point);
-        // };
-
 
         this.getRandomShoot = function () {
             var x = 0;
@@ -403,6 +394,7 @@
             var indexForRemoving = 0;
             for (indexForRemoving = 0; indexForRemoving < this.mapForPossibleShoots.length; indexForRemoving++) {
                 if (value === this.mapForPossibleShoots[indexForRemoving]) {
+                    console.log("removing "+value +" from mapPoss");
                     break;
                 }
             }
@@ -412,27 +404,7 @@
 
         };
 
-        // this.checkShoot = function (point) {
-        //     if (this.coordinatesOfShips.has(point.toString())) {
-        //         var ship = this.map.coordinatesOfShips.get(point.toString());
-        //         this.coordinatesOfShips.delete(point.toString());
-        //         this.lastCorrectShoots.push(point);
-        //         ship.lostHealth();
-        //         var notify = "Попадание! ";
-        //         this.map.showDestroyFieldOnComputerMap(point.x, point.y);
-        //         if (ship.isDestroy) {
-        //             notify = notify + ship.toString() + " потоплен";
-        //             this.lastCorrectShoots.clear();
-        //         }
-        //         this.openEmptyFieldsAroundDestroyDeck(point, ship);
-        //         console.log(notify);
-        //     }
-        //     else {
-        //         this.map.showMissedShootOnComputerMap(point.x, point.y);
-        //     }
-        // };
-
-        this.getPossibleShoot = function (x, y, direction) {
+         this.getPossibleShoot = function (x, y, direction) {
             var arr = [];
             var coordinates = parseInt(y + "" + x);
             switch (direction) {
@@ -524,42 +496,42 @@
             }
         };
 
-        // this.checkAndCollectPossiblePointsForShooting = function (val, arr) {
-        //     if (val >= 0 && val <= 99) {
-        //         arr.push(val);
-        //     }
-        // };
-
-        // this.checkShoot = function (shoot) {
-        //     if (this.coordinatesOfShips.has(shoot.toString())) {
-        //         var ship = this.coordinatesOfShips.get(shoot.toString());
-        //         var s = "Попадание! ";
-        //         ship.lostHealth();
-        //         map.showDestroyFieldOnComputerMap(shoot.x, shoot.y);
-        //         this.coordinatesOfShips.delete(shoot.toString());
-        //         if (ship.isDestroy) {
-        //             s = s + ship.toString() + " потоплен";
-        //         }
-        //         this.openEmptyFieldsAroundDestroyDeck(shoot, ship);
-        //     } else {
-        //         map.showMissedShootOnComputerMap(shoot.x, shoot.y);
-        //     }
-        // };
-        this.checkShoot = function (point, arr) {
+        this.checkShoot = function (point, enemyLastCorrectShoots, enemyMapForPossibleShoots) {
             if (this.coordinatesOfShips.has(point.toString())) {
                 var ship = this.coordinatesOfShips.get(point.toString());
                 this.coordinatesOfShips.delete(point.toString());
                 //say another player to push value in lastCorrectShoots
-                arr.push(point);
+                enemyLastCorrectShoots.push(point);
                 ship.lostHealth();
                 var notify = "Попадание! ";
                 this.map.showDestroyFieldOnComputerMap(point.x, point.y);
                 if (ship.isDestroy) {
                     notify = notify + ship.toString() + " потоплен";
                     //say another player to clear lastCorrectShoots
-                    arr.splice(0);
+                    enemyLastCorrectShoots.splice(0);
                 }
-                this.openEmptyFieldsAroundDestroyDeck(point, ship);
+
+                var arrToDelete = this.openEmptyFieldsAroundDestroyDeck(point, ship);
+                console.log("arrToDelete: "+arrToDelete);
+                var indexes = [];
+                for (var i = 0; i < arrToDelete.length; i++) {
+                    for (var j = 0; j < enemyMapForPossibleShoots.length; j++) {
+                        if (arrToDelete[i] === enemyMapForPossibleShoots[j]) {
+                            console.log("removing "+enemyMapForPossibleShoots[j] + " from enemypos");
+                            indexes.push(j);
+                            console.log(indexes);
+                        }
+                    }
+                }
+                console.log(indexes);
+                indexes.sort();
+                console.log(indexes);
+                for (var i = 0; i < indexes.length; i++) {
+                    console.log(indexes[i]);
+                    enemyMapForPossibleShoots.splice(indexes[i]-i, 1);
+                    console.log("removing "+(indexes[i]-i) + "index from enemypos");
+                }
+                console.log("enemyMapForPossibleShoots "+enemyMapForPossibleShoots);
                 console.log(notify);
             }
             else {
@@ -568,40 +540,47 @@
         };
 
         this.openEmptyFieldsAroundDestroyDeck = function (shoot, ship) {
+            var arr = [];
             if (shoot.y - 1 >= 0 && shoot.x - 1 >= 0) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x - 1);
                 map.showMissedShootOnComputerMap(shoot.x - 1, shoot.y - 1);
+                arr.push(parseInt((shoot.y - 1)+""+(shoot.x - 1)));
+
             }
             if (shoot.y + 1 < SeaMap.SIZE && shoot.x - 1 >= 0) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x - 1);
                 map.showMissedShootOnComputerMap(shoot.x - 1, shoot.y + 1);
+                arr.push(parseInt((shoot.y + 1)+""+(shoot.x - 1)));
             }
             if (shoot.y - 1 >= 0 && shoot.x + 1 < SeaMap.SIZE) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y - 1, shoot.x + 1);
                 map.showMissedShootOnComputerMap(shoot.x + 1, shoot.y - 1);
+                arr.push(parseInt((shoot.y - 1)+""+(shoot.x + 1)));
             }
             if (shoot.y + 1 < SeaMap.SIZE && shoot.x + 1 < SeaMap.SIZE) {
-                // seaMap.showMissedShootOnComputerMap(shoot.y + 1, shoot.x + 1);
                 map.showMissedShootOnComputerMap(shoot.x + 1, shoot.y + 1);
+                arr.push(parseInt((shoot.y + 1)+""+(shoot.x + 1)));
             }
             if (ship.isDestroy) {
                 if (ship.isHorizontal || ship.getCountOfDecks() == 1) {
                     if (ship.getStartPoint().x - 1 >= 0) {
                         map.showMissedShootOnComputerMap(ship.getStartPoint().x - 1, ship.getStartPoint().y);
+                        arr.push(parseInt((ship.getStartPoint().y)+""+(ship.getStartPoint().x - 1)));
                     }
                     if (ship.getEndPoint().x + 1 < SeaMap.SIZE) {
                         map.showMissedShootOnComputerMap(ship.getEndPoint().x + 1, ship.getEndPoint().y);
+                        arr.push(parseInt((ship.getEndPoint().y)+""+(ship.getEndPoint().x + 1)));
                     }
                 }
                 if (!ship.isHorizontal || ship.getCountOfDecks() == 1) {
                     if (ship.getStartPoint().y - 1 >= 0) {
                         map.showMissedShootOnComputerMap(ship.getStartPoint().x, ship.getStartPoint().y - 1);
+                        arr.push(parseInt((ship.getStartPoint().y - 1)+""+(ship.getStartPoint().x)));
                     }
                     if (ship.getEndPoint().y + 1 < SeaMap.SIZE) {
                         map.showMissedShootOnComputerMap(ship.getEndPoint().x, ship.getEndPoint().y + 1);
+                        arr.push(parseInt((ship.getEndPoint().y + 1)+""+(ship.getEndPoint().x)));
                     }
                 }
             }
+            return arr;
         };
     }
 }());
