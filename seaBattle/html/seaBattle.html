@@ -68,16 +68,13 @@
     <div id="computer_map" class="cell_container"></div>
 </div>
 <div class="buttons">
-    <button id="btn_new_game" onclick="newGame()">Новая игра</button>
+    <button id="btn_new_game" onclick="game.startGame()">Новая игра</button>
+    <button id="btn_show_computer_ships" onclick="game.showComputerShips()">Показать корабли противника</button>
+    <button id="btn_hide_computer_ships" onclick="game.hideComputerShips()">Скрыть корабли противника</button>
 </div>
 <script>
-    var g = new Game();
-    g.startGame();
-    function newGame() {
-        g.startGame();
-    }
-
-
+    var game = new Game();
+    game.startGame();
 </script>
 </body>
 </html>

@@ -11,10 +11,15 @@
             $("#computer_map").empty();
             this.seaMapComputer = new SeaMap();
             this.seaMapUser = new SeaMap();
-
             this.compPlayer = new Player(this.seaMapComputer);
             this.userPlayer = new Player(this.seaMapUser);
-            this.isGameOver = false;
+        };
+
+        this.showComputerShips = function () {
+            this.seaMapComputer.showShips(this.compPlayer.coordinatesOfShips);
+        };
+        this.hideComputerShips = function () {
+            this.seaMapComputer.hideShips(this.compPlayer.coordinatesOfShips);
         };
         this.startGame = function () {
             this.clearAll();
@@ -25,8 +30,8 @@
             var that = this;
             this.isOkComp = true;
             this.isOkUser = false;
-            this.seaMapUser.showShips(this.userPlayer.shipsOnBoard);
-            // this.seaMapComputer.showShips(this.compPlayer.shipsOnBoard);
+            this.seaMapUser.showShips(this.userPlayer.coordinatesOfShips);
+
             // while (that.isOkComp && !that.isOkUser) {
             //     that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
             // }
@@ -246,7 +251,6 @@
         SeaMap.SHIPCELL = '../img/ship.jpg';
         SeaMap.MISSEDCELL = '*';
         SeaMap.KILL = '../img/kill.jpg';
-
         this.cells = [];
 
         this.showString = function (s) {
@@ -300,9 +304,29 @@
             }
         };
 
+        this.hideShips = function (shipsMap) {
+            for (let ship of shipsMap.values()) {
+                if (!ship.isHorizontal) {
+                    for (var j = 0; j < ship.countOfDecks; j++) {
+                        var field = $(this.cells[ship.endPoint.y - j][ship.endPoint.x]);
+                        field.empty();
+                        var img = $("<img class='ship' src='../img/sea.gif' width='100%' height='100%'/>");
+                        field.append(img);
+                    }
+                } else {
+                    for (var j = 0; j < ship.countOfDecks; j++) {
+                        var field = $(this.cells[ship.endPoint.y][ship.endPoint.x - j]);
+                        field.empty();
+                        var img = $("<img class='ship' src='../img/sea.gif' width='100%' height='100%'/>");
+                        field.append(img);
+                    }
+                }
+            }
+            ;
+        };
+
         this.showShips = function (shipsArr) {
-            for (var i = 0; i < shipsArr.length; i++) {
-                var ship = shipsArr[i];
+            for (let ship of shipsArr.values()) {
                 if (!ship.isHorizontal) {
                     for (var j = 0; j < ship.countOfDecks; j++) {
                         var field = $(this.cells[ship.endPoint.y - j][ship.endPoint.x]);

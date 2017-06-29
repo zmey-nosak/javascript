@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0fec926e-a8d2-4275-bdff-4f594f2e482f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seaBattle/html/seaBattle.html" afterPath="$PROJECT_DIR$/seaBattle/html/seaBattle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seaBattle/js/game.js" afterPath="$PROJECT_DIR$/seaBattle/js/game.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,13 +28,12 @@
       <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seaBattle/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="600">
+              <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
               <folding>
-                <element signature="e#2787#9452#0" expanded="false" />
-                <element signature="e#9476#12418#0" expanded="false" />
-                <element signature="e#21831#24002#0" expanded="false" />
-                <element signature="e#24076#26461#0" expanded="false" />
+                <element signature="e#2955#9620#0" expanded="false" />
+                <element signature="e#22908#25079#0" expanded="false" />
+                <element signature="e#25153#27538#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,8 +92,8 @@
       <file leaf-file-name="seaBattle.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seaBattle/html/seaBattle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+            <state relative-caret-position="1440">
+              <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -136,8 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DESTROY</find>
-      <find>health</find>
       <find>Destroy</find>
       <find>DESTRO</find>
       <find>openEmptyFieldsAroundDestroyDeck</find>
@@ -166,6 +164,8 @@
       <find>removeFromPossibleShoot</find>
       <find>MISS</find>
       <find>isExistShips</find>
+      <find>shipsOnBoard</find>
+      <find>coordinatesOfShips</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -261,6 +261,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,6 +306,10 @@
               <option name="myItemId" value="seaBattle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -339,8 +345,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,7 +498,8 @@
       <workItem from="1498732952793" duration="1768000" />
       <workItem from="1498735000350" duration="1856000" />
       <workItem from="1498736913470" duration="715000" />
-      <workItem from="1498739051340" duration="111000" />
+      <workItem from="1498739051340" duration="1877000" />
+      <workItem from="1498740991924" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="homework&#10;">
       <created>1494950164374</created>
@@ -671,11 +676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498737016959</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add task3_1 and task3_2&#10;           add task3_3&#10;           add task4&#10;           add task5&#10;           add task6&#10;           complete task8&#10;           complete task7&#10;           complete task9&#10;           correct task7&#10;           finishSeaWar">
+      <created>1498739180755</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1498739180755</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294328000" />
+    <option name="totallyTimeSpent" value="296123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,21 +1083,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seaBattle/html/seaBattle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        <state relative-caret-position="1440">
+          <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seaBattle/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="600">
+          <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
           <folding>
-            <element signature="e#2787#9452#0" expanded="false" />
-            <element signature="e#9476#12418#0" expanded="false" />
-            <element signature="e#21831#24002#0" expanded="false" />
-            <element signature="e#24076#26461#0" expanded="false" />
+            <element signature="e#2955#9620#0" expanded="false" />
+            <element signature="e#22908#25079#0" expanded="false" />
+            <element signature="e#25153#27538#0" expanded="false" />
           </folding>
         </state>
       </provider>
