@@ -21,28 +21,32 @@
             this.isOkComp = true;
             this.isOkUser = false;
             this.seaMapUser.showShips(this.userPlayer.shipsOnBoard);
-            while (that.isOkComp && !that.isOkUser) {
-
-                that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
-            }
+            this.seaMapComputer.showShips(this.compPlayer.shipsOnBoard);
+            // while (that.isOkComp && !that.isOkUser) {
+            //     that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
+            // }
             $("#computer_map").find(".cell").click(function (e) {
                 var arr = $(this).attr("id").split(":");
-                var shoot = new Point(parseInt(arr[0]), parseInt(arr[1]));
-                let field = $(that.seaMapComputer.cells[shoot.y][shoot.x]);
-                if (field.text() === SeaMap.MISSEDCELL || field.text() === SeaMap.DESTROYCELL)return;
+                var shoot = new Point(parseInt(arr[1]), parseInt(arr[0]));
 
-                that.isOkUser = that.compPlayer.checkShoot(shoot, that.userPlayer.lastCorrectShoots);
+                let field = $(that.seaMapComputer.cells[shoot.y][shoot.x]);
+                var tmp = parseInt(shoot.y + "" + shoot.x);
+                if(!that.userPlayer.mapForPossibleShoots.includes(tmp))return;
+                that.userPlayer.removeFromPossibleShoot(tmp);
+                // if (field.text() === SeaMap.MISSEDCELL || field.text() === SeaMap.DESTROYCELL)return;
+
+                that.isOkUser = that.compPlayer.checkShoot(shoot, that.userPlayer.lastCorrectShoots,that.userPlayer.mapForPossibleShoots);
                 if (!that.isOkUser) {
                     that.isOkComp = true;
                 }
-                while (that.isOkComp && !that.isOkUser) {
-                    that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
-                }
-                if (that.isOkComp) {
-                    that.isOkComp = false;
-                    that.isOkUser = true;
-                    return;
-                }
+                // while (that.isOkComp && !that.isOkUser) {
+                //     that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
+                // }
+                // if (that.isOkComp) {
+                //     that.isOkComp = false;
+                //     that.isOkUser = true;
+                //     return;
+                // }
             });
         };
 
@@ -234,19 +238,12 @@
         SeaMap.DESTROYCELL = 43;
         SeaMap.SHIPCELL = '../img/ship.jpg';
         SeaMap.MISSEDCELL = '*';
-
+        SeaMap.KILL = '../img/kill.jpg';
 
         this.cells = [];
 
         this.showString = function (s) {
             alert(s);
-        };
-        this.sleep = function (millis) {
-            var t = (new Date()).getTime();
-            var i = 0;
-            while (((new Date()).getTime() - t) < millis) {
-                i++;
-            }
         };
         this.iterateCells = function (point) {
             this.x = 0;
@@ -275,15 +272,22 @@
 
         this.showDestroyFieldOnComputerMap = function (x, y) {
             var field = $(this.cells[y][x]);
-            field.text(SeaMap.DESTROYCELL);
+            field.empty();
+            // var field = $(this.cells[ship.endPoint.y - j][ship.endPoint.x]);
+            var img = $("<img class='kill' src='../img/kill.gif' width='100%' height='100%'/>");
+            field.append(img);
+            // field.text(SeaMap.DESTROYCELL);
 
         };
 
         this.showMissedShootOnComputerMap = function (x, y) {
             var field = $(this.cells[y][x]);
-            if (field.text() != SeaMap.DESTROYCELL) {
+                field.empty();
+                // var img = $("<img class='missed' src='../img/missed.jpg' width='100%' height='100%'/>");
+                // field.append(img);
+                field.css('text-align','center');
                 field.text(SeaMap.MISSEDCELL);
-            }
+
         };
 
         this.showMap = function (elId) {
@@ -293,8 +297,12 @@
                 this.cells[y] = [];
                 for (var x = 0; x < SeaMap.SIZE; x++) {
                     var div = document.createElement("div");
-                    div.setAttribute("id", x + ":" + y);
+                    div.setAttribute("id", y + ":" + x);
                     div.classList.add("cell");
+                    var cont=$(div);
+                    var img = $("<img class='sea' src='../img/sea.gif' width='100%' height='100%'/>");
+                    cont.append(img);
+                    // div.innerText=div.id;
                     el.appendChild(div);
                     this.cells[y][x] = div;
                 }
@@ -319,14 +327,15 @@
                 if (!ship.isHorizontal) {
                     for (var j = 0; j < ship.countOfDecks; j++) {
                         var field = $(this.cells[ship.endPoint.y - j][ship.endPoint.x]);
-                        // field.css({'background-image':'url(../img/ship.jpg)'});
-                        var img=$("<img src='../img/ship.jpg' width='100%' height='100%'>");
+                        field.empty();
+                        var img = $("<img class='ship' src='../img/ship.png' width='100%' height='100%'/>");
                         field.append(img);
                     }
                 } else {
                     for (var j = 0; j < ship.countOfDecks; j++) {
                         var field = $(this.cells[ship.endPoint.y][ship.endPoint.x - j]);
-                        var img=$("<img src='../img/ship.jpg' width='2em' height='2em'>");
+                        field.empty();
+                        var img = $("<img class='ship' src='../img/ship.png' width='100%' height='100%'/>");
                         field.append(img);
                     }
                 }
@@ -426,6 +435,17 @@
             }
         };
 
+        this.removeFromPossibleShoot = function (value) {
+            var indexForRemoving = 0;
+            for (indexForRemoving = 0; indexForRemoving < this.mapForPossibleShoots.length; indexForRemoving++) {
+                if (value === this.mapForPossibleShoots[indexForRemoving]) {
+                    console.log("removing " + value + " from mapPoss");
+                    break;
+                }
+            }
+            this.mapForPossibleShoots.splice(indexForRemoving, 1);
+        };
+
         this.getFinalShootPoint = function (arr) {
             console.log("possible:" + arr);
             var randIndex = Math.round(Math.random() * (arr.length - 1));
@@ -438,14 +458,7 @@
                 var tmp = value / 10;
                 y = Math.trunc(tmp);
             }
-            var indexForRemoving = 0;
-            for (indexForRemoving = 0; indexForRemoving < this.mapForPossibleShoots.length; indexForRemoving++) {
-                if (value === this.mapForPossibleShoots[indexForRemoving]) {
-                    console.log("removing " + value + " from mapPoss");
-                    break;
-                }
-            }
-            this.mapForPossibleShoots.splice(indexForRemoving, 1);
+            this.removeFromPossibleShoot(value);
             console.log(x + "," + y);
             return new Point(x, y);
 
@@ -545,7 +558,7 @@
         };
 
         this.checkShoot = function (point, enemyLastCorrectShoots, enemyMapForPossibleShoots) {
-            this.map.iterateCells(point);
+            // this.map.iterateCells(point);
             if (this.coordinatesOfShips.has(point.toString())) {
                 var ship = this.coordinatesOfShips.get(point.toString());
                 this.coordinatesOfShips.delete(point.toString());
@@ -635,3 +648,5 @@
         };
     }
 }());
+
+
