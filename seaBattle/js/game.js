@@ -26,7 +26,7 @@
             this.isOkComp = true;
             this.isOkUser = false;
             this.seaMapUser.showShips(this.userPlayer.shipsOnBoard);
-            this.seaMapComputer.showShips(this.compPlayer.shipsOnBoard);
+            // this.seaMapComputer.showShips(this.compPlayer.shipsOnBoard);
             // while (that.isOkComp && !that.isOkUser) {
             //     that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
             // }
