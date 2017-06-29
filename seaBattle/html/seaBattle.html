@@ -27,7 +27,6 @@
         margin: 0;
         /*justify-content: space-around;*/
 
-
     }
 
     .cell {
@@ -36,6 +35,9 @@
         display: inline-flex;
         border: 0.02em solid #B4B4FF;
         text-align: center;
+        align-items: center;
+        align-content: center;
+
         height: 2em;
         width: 2em;
         border-collapse: collapse;
@@ -44,6 +46,15 @@
 
     .cell:hover {
         border: 0.01em solid green;
+    }
+
+    .missed {
+        display: flex;
+        border-radius: 0.2em;
+        background-color: red;
+        width: 0.5em;
+        height: 0.5em;
+        margin: 0 auto;
     }
 
     td {
@@ -56,9 +67,17 @@
     <div id="user_map" class="cell_container"></div>
     <div id="computer_map" class="cell_container"></div>
 </div>
+<div class="buttons">
+    <button id="btn_new_game" onclick="newGame()">Новая игра</button>
+</div>
 <script>
     var g = new Game();
     g.startGame();
+    function newGame() {
+        g.startGame();
+    }
+
+
 </script>
 </body>
 </html>

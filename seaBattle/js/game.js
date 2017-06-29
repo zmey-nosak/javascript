@@ -4,15 +4,20 @@
 ;(function () {
     window.Game = function () {
         Game.SHIPS_COUNT = 10;
-        this.seaMapComputer = new SeaMap();
-        this.seaMapUser = new SeaMap();
 
-        this.compPlayer = new Player(this.seaMapComputer);
-        this.userPlayer = new Player(this.seaMapUser);
 
-        this.isGameOver = false;
+        this.clearAll = function () {
+            $("#user_map").empty();
+            $("#computer_map").empty();
+            this.seaMapComputer = new SeaMap();
+            this.seaMapUser = new SeaMap();
 
+            this.compPlayer = new Player(this.seaMapComputer);
+            this.userPlayer = new Player(this.seaMapUser);
+            this.isGameOver = false;
+        };
         this.startGame = function () {
+            this.clearAll();
             this.seaMapComputer.show("computer_map");
             this.seaMapUser.show("user_map");
             this.compPlayer.generateShips();
@@ -28,25 +33,27 @@
             $("#computer_map").find(".cell").click(function (e) {
                 var arr = $(this).attr("id").split(":");
                 var shoot = new Point(parseInt(arr[1]), parseInt(arr[0]));
-
-                let field = $(that.seaMapComputer.cells[shoot.y][shoot.x]);
                 var tmp = parseInt(shoot.y + "" + shoot.x);
-                if(!that.userPlayer.mapForPossibleShoots.includes(tmp))return;
+                if (!that.userPlayer.mapForPossibleShoots.includes(tmp))return;
                 that.userPlayer.removeFromPossibleShoot(tmp);
-                // if (field.text() === SeaMap.MISSEDCELL || field.text() === SeaMap.DESTROYCELL)return;
-
-                that.isOkUser = that.compPlayer.checkShoot(shoot, that.userPlayer.lastCorrectShoots,that.userPlayer.mapForPossibleShoots);
+                that.isOkUser = that.compPlayer.checkShoot(shoot, that.userPlayer.lastCorrectShoots, that.userPlayer.mapForPossibleShoots);
                 if (!that.isOkUser) {
                     that.isOkComp = true;
                 }
-                // while (that.isOkComp && !that.isOkUser) {
-                //     that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
-                // }
-                // if (that.isOkComp) {
-                //     that.isOkComp = false;
-                //     that.isOkUser = true;
-                //     return;
-                // }
+                if (that.compPlayer.isExistShips() !== true) {
+                    prompt("Вы победили");
+                }
+                while (that.isOkComp && !that.isOkUser) {
+                    that.isOkComp = that.userPlayer.checkShoot(that.compPlayer.getRandomShoot(), that.compPlayer.lastCorrectShoots, that.compPlayer.mapForPossibleShoots);
+                    if (!that.userPlayer.isExistShips()) {
+                        prompt("Вы проиграли");
+                    }
+                }
+                if (that.isOkComp) {
+                    that.isOkComp = false;
+                    that.isOkUser = true;
+                    return;
+                }
             });
         };
 
@@ -245,49 +252,21 @@
         this.showString = function (s) {
             alert(s);
         };
-        this.iterateCells = function (point) {
-            this.x = 0;
-            this.y = 0;
-            var that = this;
-            var id = setInterval(function () {
-                if (that.x === point.x && that.y === point.y) return;
-                var field = $(that.cells[that.y][that.x]);
-                field.css("border-color", "red");
-                if (that.x > 0) {
-                    var field1 = $(that.cells[that.y][that.x - 1]);
-                    field1.css("border-color", "#B4B4FF");
-
-                }
-                that.x++;
-                if (that.x >= 11) {
-                    that.y++;
-                    that.x = 0;
-                }
-
-            }, 60);
-            // if (that.y == 9)
-            //     clearInterval(id);
-        };
-
 
         this.showDestroyFieldOnComputerMap = function (x, y) {
             var field = $(this.cells[y][x]);
             field.empty();
-            // var field = $(this.cells[ship.endPoint.y - j][ship.endPoint.x]);
             var img = $("<img class='kill' src='../img/kill.gif' width='100%' height='100%'/>");
             field.append(img);
-            // field.text(SeaMap.DESTROYCELL);
 
         };
 
         this.showMissedShootOnComputerMap = function (x, y) {
             var field = $(this.cells[y][x]);
-                field.empty();
-                // var img = $("<img class='missed' src='../img/missed.jpg' width='100%' height='100%'/>");
-                // field.append(img);
-                field.css('text-align','center');
-                field.text(SeaMap.MISSEDCELL);
-
+            field.empty();
+            var div = $("<div>");
+            div.addClass("missed");
+            field.append(div);
         };
 
         this.showMap = function (elId) {
@@ -299,7 +278,7 @@
                     var div = document.createElement("div");
                     div.setAttribute("id", y + ":" + x);
                     div.classList.add("cell");
-                    var cont=$(div);
+                    var cont = $(div);
                     var img = $("<img class='sea' src='../img/sea.gif' width='100%' height='100%'/>");
                     cont.append(img);
                     // div.innerText=div.id;
@@ -354,7 +333,7 @@
         }
 
         this.isExistShips = function () {
-            return this.coordinatesOfShips.isEmpty();
+            return this.coordinatesOfShips.size > 0;
         };
 
         this.init = function () {
@@ -569,7 +548,6 @@
                 this.map.showDestroyFieldOnComputerMap(point.x, point.y);
                 if (ship.isDestroy) {
                     notify = notify + ship.toString() + " потоплен";
-                    //say another player to clear lastCorrectShoots
                     enemyLastCorrectShoots.splice(0);
                 }
 
@@ -586,7 +564,9 @@
                     }
                 }
                 console.log(indexes);
-                indexes.sort();
+                indexes.sort(function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                });
                 console.log(indexes);
                 for (var i = 0; i < indexes.length; i++) {
                     console.log(indexes[i]);
